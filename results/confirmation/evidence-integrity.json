@@ -1,0 +1,69 @@
+{
+  "runs": [
+    {
+      "all_expectations_match": true,
+      "cells": 15,
+      "envelope_sha256": "2a1ae3351d46e5868d9cc4ad18a856a5b4c86b3274aef56eb3c7e54db417d9ca",
+      "implementation": "go-crypto-tls-go1.24.13",
+      "phase": "primary",
+      "records_sha256": "f6d1334d4e2ff988744a25f07cb7f0f15033b7831bdc1b1a7b02c49726c9d59f",
+      "run": "go124-primary",
+      "units": 120
+    },
+    {
+      "all_expectations_match": true,
+      "cells": 15,
+      "envelope_sha256": "bf12b06ead610f12fd2985789baec163d87cdd10d9bfc42f1b374ac6310da2f7",
+      "implementation": "go-crypto-tls-go1.24.13",
+      "phase": "replay",
+      "records_sha256": "c68a159a15ec48549b4e640aa3d40dd688d005cf5c3ec9b6a1eb7603ce654e0c",
+      "run": "go124-replay",
+      "units": 120
+    },
+    {
+      "all_expectations_match": true,
+      "cells": 15,
+      "envelope_sha256": "27201c741bd1286cad07a17ada5854452af876253466a1278c3740dc4a0f4cb8",
+      "implementation": "rustcrypto-x-wing",
+      "phase": "primary",
+      "records_sha256": "985cc5d212b5aa8db8747cc5fbe5a5485e2bfb87170af282f0ece4481fc25724",
+      "run": "xwing-primary",
+      "units": 120
+    },
+    {
+      "all_expectations_match": true,
+      "cells": 15,
+      "envelope_sha256": "34e76a009a5ceec5ae9ad7e25909fae2c57c4cafe2a01bbd6bf23703722c6054",
+      "implementation": "rustcrypto-x-wing",
+      "phase": "replay",
+      "records_sha256": "260c84b40e56772060232b0567a0781dc5a575bea73dcb5c4a24f3773dd30a71",
+      "run": "xwing-replay",
+      "units": 120
+    },
+    {
+      "all_expectations_match": true,
+      "cells": 15,
+      "envelope_sha256": "84d628b5bcf339a3fde3aac9e262f50d4d48f1e8d80faac3b4855867c4ae6604",
+      "implementation": "liboqs-dual-pqc",
+      "phase": "primary",
+      "records_sha256": "5b5d2c051f23b590d95f81cb92c5b4549023d2da781c4586476ef8bb9e8a9bd4",
+      "run": "liboqs-primary",
+      "units": 120
+    },
+    {
+      "all_expectations_match": true,
+      "cells": 15,
+      "envelope_sha256": "670550dd6b9e410f79c9a0fccafa8f096333434d4ebb78db56858af241b7b7bd",
+      "implementation": "liboqs-dual-pqc",
+      "phase": "replay",
+      "records_sha256": "1dcba28c8d85a11ab134f1be756bf202d4feb1fdab087ae91acfc66f61a3a71d",
+      "run": "liboqs-replay",
+      "units": 120
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "3 implementations x primary/replay; integrity and frozen qualitative outcomes",
+  "status": "PASS",
+  "total_executed_units": 720,
+  "total_response_surface_cells": 90
+}

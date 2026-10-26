@@ -1,0 +1,21 @@
+FROM rust:1.90.0-bookworm@sha256:3914072ca0c3b8aad871db9169a651ccfce30cf58303e5d6f2db16d1d8a7e58f AS build
+WORKDIR /src
+COPY src/rust/Cargo.toml src/rust/Cargo.lock ./
+COPY src/rust/src ./src
+RUN cargo test --locked \
+    && cargo build --release --locked \
+    && cp Cargo.lock /out-Cargo.lock
+
+FROM python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+RUN groupadd --gid 10001 artifact \
+    && useradd --uid 10001 --gid 10001 --create-home artifact \
+    && mkdir -p /opt/p01 /data \
+    && chown -R 10001:10001 /data
+COPY --from=build /src/target/release/p01-xwing-redesign-pilot /opt/p01/pair-worker
+COPY --from=build /out-Cargo.lock /opt/p01/Cargo.lock
+COPY runners/runner.py /opt/p01/confirmation_runner.py
+COPY runners/benchmark_runner.py /opt/p01/benchmark_runner.py
+COPY contracts/performance_contract.frozen.json /opt/p01/performance_contract.frozen.json
+USER 10001:10001
+ENTRYPOINT ["python", "/opt/p01/confirmation_runner.py", "--binary", "/opt/p01/pair-worker", "--implementation", "rustcrypto-x-wing"]

@@ -1,0 +1,203 @@
+{
+  "project_id": "P01-common-mode-pqc",
+  "freeze_id": "P01-claim-freeze-v2-2026-10-26",
+  "frozen_at": "2026-10-26T00:00:00+07:00",
+  "working_title": "Role-Aware Entropy-Containment Testing for Post-Quantum Hybrid and Dual-KEM Implementations",
+  "central_question": "Can a standards-linked, role-aware entropy boundary prevent rollback of an origin post-quantum component from deterministically removing freshness from an independent peer component in hybrid or dual-PQC key establishment?",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Under the frozen software entropy-state rollback model, shared state, labels over a shared state root, and an unreachable global RNG split do not preserve peer or combined artifact freshness in the tested post-quantum key-establishment implementations.",
+      "type": "comparative",
+      "status": "SUPPORTED",
+      "scope": "A0-A2, the two frozen reuse recipes, eight deterministic matched pairs per cell, and the pinned Go 1.24.13 X25519MLKEM768, RustCrypto X-Wing, and liboqs ML-KEM-768 plus HQC-3 realizations.",
+      "assumptions": ["The frozen equality-based freshness oracle is implemented correctly", "The injected reset reaches the recorded entropy object", "No inference is made to physical-fault prevalence"],
+      "evidence": [
+        {"type": "experiment", "ref": "results/confirmation/evidence-integrity.json", "strength": "DIRECT"},
+        {"type": "artifact", "ref": "results/confirmation/*/summary.json", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": [],
+      "uncertainty": "Not a sampling estimate; exact deterministic response-surface count, 0/8 freshness preservation in every frozen reuse cell for A0-A2 across all three implementations.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["abstract", "introduction", "method", "results", "discussion", "conclusion"],
+      "stronger_prohibited_wording": ["all hybrid PQC implementations share one failure domain", "algorithm diversity provides no security", "the experiment proves key recovery or IND-CCA failure"]
+    },
+    {
+      "id": "C2",
+      "text": "Within the frozen one-event rollback model, a reached role-routed entropy boundary preserves peer and combined freshness while the intentionally reset origin component repeats.",
+      "type": "causal",
+      "status": "SUPPORTED",
+      "scope": "A3 versus the matched A0-A2 controls, limited to the frozen software intervention and the three pinned implementations; the Go call-order router is measurement instrumentation rather than a production API.",
+      "assumptions": ["Equal intervention budgets and frozen schedules are valid", "The role router reaches the component consumption point", "Artifact inequality is a freshness oracle, not a full security proof"],
+      "evidence": [
+        {"type": "intervention", "ref": "results/confirmation/*/summary.json", "strength": "DIRECT"},
+        {"type": "negative_control", "ref": "contracts/confirmation_contract.frozen.json#architectures", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": [],
+      "uncertainty": "Exact matched response: origin 0/8, peer 8/8, combined 8/8 for both frozen reuse recipes in each implementation.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["abstract", "method", "results", "discussion", "conclusion"],
+      "stronger_prohibited_wording": ["A3 is production safe", "A3 is universally sufficient", "A3 is superior to hedging"]
+    },
+    {
+      "id": "C3",
+      "text": "The RFC-8937-style hedge control preserves the tested freshness outcomes when a unique context survives raw RNG-state reuse, but loses that protection when both raw RNG state and uniqueness context are reset.",
+      "type": "mechanism",
+      "status": "SUPPORTED",
+      "scope": "A4 under the two frozen reuse recipes and the study's RFC-8937-inspired wrapper; this is a boundary test of prior-art hedging, not a new hedging construction.",
+      "assumptions": ["The study wrapper faithfully represents the declared hedge dependency structure", "No deployment-cost conclusion is inferred"],
+      "evidence": [
+        {"type": "intervention", "ref": "results/confirmation/*/summary.json", "strength": "DIRECT"},
+        {"type": "standard", "ref": "RFC 8937", "strength": "CONTEXT"}
+      ],
+      "contradicting_evidence": [],
+      "uncertainty": "Exact response: 8/8 for all outcomes under raw-state reuse and 0/8 for all outcomes under joint raw-state-plus-context reuse, in each implementation.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["abstract", "related_work", "method", "results", "discussion", "conclusion"],
+      "stronger_prohibited_wording": ["we invent hedged randomness", "hedging prevents VM rollback", "the tested hedge is a drop-in production implementation"]
+    },
+    {
+      "id": "C4",
+      "text": "The complete 5-by-3 qualitative decision surface is identical across the pinned Go TLS, RustCrypto X-Wing, and liboqs dual-PQC realizations.",
+      "type": "robustness_generalization",
+      "status": "SUPPORTED",
+      "scope": "Transportability across three selected source lineages and realization classes only; it is not population-level generalization to all libraries, protocols, operating systems, compilers, or hardware.",
+      "assumptions": ["The shared orchestration does not fabricate implementation artifacts", "Pinned implementations are correctly identified"],
+      "evidence": [
+        {"type": "experiment", "ref": "results/confirmation/evidence-integrity.json", "strength": "DIRECT"},
+        {"type": "source_identity", "ref": "contracts/confirmation_contract.frozen.json", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": [],
+      "uncertainty": "Bounded external validity: three selected lineages, one Go version in confirmation, one Rust X-Wing implementation, and one liboqs dual-PQC wrapper.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["abstract", "method", "results", "discussion", "conclusion"],
+      "stronger_prohibited_wording": ["universal across post-quantum implementations", "statistically representative of deployed software", "independent human-team replication"]
+    },
+    {
+      "id": "C5",
+      "text": "In the pinned Go 1.24.13 X25519MLKEM768 ClientHello path, changing the global crypto/rand.Reader split point does not partition the measured component inputs because the tested path consumes tls.Config.Rand; an actually reached component-scoped boundary is required for the measured containment effect.",
+      "type": "mechanism",
+      "status": "SUPPORTED",
+      "scope": "Exact Go source commit 96e4e2b1616c3c59577d48abcf2823bf1fdcd2e2 and the instrumented ClientHello generation path; no claim about all Go versions or server-side handshake behavior.",
+      "assumptions": ["Source and runtime traces correspond to the pinned image", "Call-order routing is used only as measurement instrumentation"],
+      "evidence": [
+        {"type": "source_trace", "ref": "src/go/main.go", "strength": "DIRECT"},
+        {"type": "negative_control", "ref": "contracts/confirmation_contract.frozen.json#architectures", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": [],
+      "uncertainty": "Version- and path-specific implementation observation.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["abstract", "method", "results", "discussion", "conclusion"],
+      "stronger_prohibited_wording": ["Go TLS has an exploitable vulnerability", "all Go TLS versions ignore crypto/rand.Reader", "a CVE has been found"]
+    },
+    {
+      "id": "C6",
+      "text": "All 360 primary and 360 independent-schedule replay units preserve the frozen cryptographic artifacts and qualitative outcomes, and all six evidence envelopes validate; raw diagnostic-trace bit identity is not claimed.",
+      "type": "descriptive",
+      "status": "SUPPORTED",
+      "scope": "Canonical final replay comparators and evidence-integrity report only, with deviations D01 and D02 disclosed.",
+      "assumptions": ["Canonical final comparator exclusions are correctly documented", "Cryptographic artifacts and outcomes are the replay target"],
+      "evidence": [
+        {"type": "artifact", "ref": "results/confirmation/evidence-integrity.json", "strength": "DIRECT"},
+        {"type": "deviation_log", "ref": "docs/THREATS_TO_VALIDITY.md#internal-validity", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": ["D01 excludes four non-semantic Go diagnostic telemetry fields post run", "D02 corrects a CRLF-versus-LF report digest mismatch"],
+      "uncertainty": "Semantic cryptographic replay is exact; raw telemetry replay is explicitly outside the claim.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["method", "results", "artifact_availability", "limitations"],
+      "stronger_prohibited_wording": ["bit-for-bit replay of every trace field", "independent third-party reproduction", "R4 reproduction complete"]
+    },
+    {
+      "id": "C7",
+      "text": "This experimental artifact makes no firstness or literature-novelty claim; any such claim requires a current, separately auditable literature and group-overlap review.",
+      "type": "novelty_positioning",
+      "status": "DEFERRED_TO_MANUSCRIPT_AUTHOR",
+      "scope": "Literature and novelty adjudication are outside this public experimental artifact and require a current, independently auditable search before manuscript use.",
+      "assumptions": [],
+      "evidence": [],
+      "contradicting_evidence": ["RFC 10024 already identifies shared-RNG coupling", "RFC 8937 already provides hedging", "cryptographic functional testing, common-cause analysis, and fault injection are established prior art"],
+      "uncertainty": "Not assessed in this release.",
+      "manuscript_allowed": false,
+      "allowed_sections": [],
+      "stronger_prohibited_wording": ["first to discover shared-RNG risk", "first fault-injection method", "first dependency graph for cryptography", "first hybrid KEM assurance method without a documented qualifier"]
+    },
+    {
+      "id": "C8",
+      "text": "For the declared fault family, a reached component-scoped entropy boundary is a sufficient structural condition for preserving the peer component's freshness obligation when only the origin component's entropy state is reset.",
+      "type": "theoretical",
+      "status": "DERIVED",
+      "scope": "A conditional supporting proposition under the declared mapping, fault reach, oracle, and unaffected-component assumptions; it is not a cryptographic security theorem.",
+      "assumptions": ["Evidence-map completeness for the tested dependency type", "Correct frozen property oracle", "No undeclared shared state within the tested event"],
+      "evidence": [
+        {"type": "derivation", "ref": "AI_HANDOFF.md#technical-object-and-mechanism", "strength": "DIRECT"},
+        {"type": "experiment", "ref": "results/confirmation/*/summary.json", "strength": "SUPPORTING"}
+      ],
+      "contradicting_evidence": [],
+      "uncertainty": "The proposition is definition-level and conditional; its value is the validated mapping, not theorem depth.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["model", "method", "discussion"],
+      "stronger_prohibited_wording": ["proof of IND-CCA security", "complete proof of deployment security", "novel fault-tree theorem"]
+    },
+    {
+      "id": "C9",
+      "text": "A3 is faster, cheaper, safer, or operationally superior to A4.",
+      "type": "deployment_practicality",
+      "status": "REJECTED",
+      "scope": "Matched process-level latency, child CPU-time, and peak-RSS measurements were executed, but no operational-risk study or reproducible superiority effect was established.",
+      "assumptions": [],
+      "evidence": [
+        {"type": "experiment", "ref": "results/performance-analysis/paired_contrasts.csv", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": ["All 36 prespecified nominal A3/A4 versus A0 wall-time, CPU-time, and peak-RSS ratio intervals include parity", "Operational complexity and production risk remain unmeasured"],
+      "uncertainty": "The bounded measurements support neither speed superiority nor deployment superiority.",
+      "manuscript_allowed": false,
+      "allowed_sections": [],
+      "stronger_prohibited_wording": ["A3 dominates A4", "negligible overhead", "production-ready mitigation"]
+    },
+    {
+      "id": "C10",
+      "text": "The observed artifact repetition proves exploitability, secret recovery, a CVE, physical-fault feasibility, or loss of IND-CCA security.",
+      "type": "other",
+      "status": "REJECTED",
+      "scope": "The study uses a controlled software mechanism probe and a freshness oracle only.",
+      "assumptions": [],
+      "evidence": [],
+      "contradicting_evidence": ["No attacker success experiment, secret-recovery demonstration, physical injection, or security-game reduction was performed"],
+      "uncertainty": "Outside the study's estimand.",
+      "manuscript_allowed": false,
+      "allowed_sections": [],
+      "stronger_prohibited_wording": ["vulnerability discovered", "CVE", "practical exploit", "physical attack success", "IND-CCA broken"]
+    },
+    {
+      "id": "C11",
+      "text": "The 720 deterministic observations estimate real-world RNG-failure prevalence or a population reliability probability.",
+      "type": "robustness_generalization",
+      "status": "REJECTED",
+      "scope": "The experimental units are deterministic probes over frozen recipe and architecture cells, not iid draws from a field population.",
+      "assumptions": [],
+      "evidence": [],
+      "contradicting_evidence": ["The experiment contract explicitly defines exact response-surface evaluation rather than population sampling"],
+      "uncertainty": "No field-prevalence estimand exists.",
+      "manuscript_allowed": false,
+      "allowed_sections": [],
+      "stronger_prohibited_wording": ["failure probability", "risk prevalence", "confidence interval over deployment failures", "720 independent security trials"]
+    },
+    {
+      "id": "C12",
+      "text": "In the frozen process-level cost study, the prespecified nominal A3 and A4 comparisons against A0 do not establish a reproducible wall-time, child-CPU-time, or peak-RSS difference in any pinned implementation: every primary and replay 95% paired bootstrap ratio interval includes parity.",
+      "type": "deployment_practicality",
+      "status": "SUPPORTED",
+      "scope": "Three pinned Linux containers, 0.5 vCPU and 1 GiB allocation, 40 randomized complete blocks per phase, process startup included, primary and replay analyzed separately.",
+      "assumptions": ["Linux wait4 accounting is correctly interpreted", "Complete randomized blocks are the paired statistical unit", "The result is descriptive rather than an equivalence test"],
+      "evidence": [
+        {"type": "experiment", "ref": "results/performance-analysis/paired_contrasts.csv", "strength": "DIRECT"},
+        {"type": "contract", "ref": "contracts/performance_contract.frozen.json", "strength": "DIRECT"}
+      ],
+      "contradicting_evidence": ["Point estimates fluctuate around parity and some directions differ between primary and replay"],
+      "uncertainty": "The intervals do not prove zero overhead or formal equivalence; smaller effects may remain unresolved.",
+      "manuscript_allowed": true,
+      "allowed_sections": ["method", "results", "discussion", "limitations"],
+      "stronger_prohibited_wording": ["zero overhead", "A3 is faster than A4", "A4 is faster than A3", "performance equivalence proved", "production cost is negligible"]
+    }
+  ]
+}

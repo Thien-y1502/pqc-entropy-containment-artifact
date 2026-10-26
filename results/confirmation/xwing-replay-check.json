@@ -1,0 +1,15 @@
+{
+  "exact_semantic_replay": true,
+  "extra": [],
+  "missing": [],
+  "primary_implementations": [
+    "rustcrypto-x-wing"
+  ],
+  "primary_units": 120,
+  "replay_implementations": [
+    "rustcrypto-x-wing"
+  ],
+  "replay_units": 120,
+  "schema_version": "1.0",
+  "semantic_mismatches": []
+}

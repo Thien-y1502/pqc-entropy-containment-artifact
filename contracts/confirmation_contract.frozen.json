@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "P01-CONFIRMATION-V1",
+  "frozen_at": "2026-10-25",
+  "scientific_status": "FROZEN_BEFORE_CONFIRMATORY_EXECUTION",
+  "research_question": "Can a standards-linked, role-aware entropy boundary prevent a rollback in the origin PQ component from deterministically removing freshness from the independent peer component in hybrid or dual-PQC key establishment?",
+  "hypotheses": {
+    "H1": "Shared state, label-only derivation, and an unreachable split sham do not preserve peer freshness under origin RNG-state reuse.",
+    "H2": "A reached role-routed entropy boundary preserves peer freshness while the deliberately rolled-back origin component repeats.",
+    "H3": "An RFC-8937-style hedge preserves origin, peer, and combined freshness under raw-state reuse when unique context survives, but fails when raw state and context are both reset.",
+    "H4": "The qualitative decision surface transfers across a real Go TLS ClientHello path, RustCrypto X-Wing, and a liboqs ML-KEM-768 plus HQC-3 dual-PQC realization."
+  },
+  "implementations": [
+    {
+      "id": "go-crypto-tls-go1.24.13",
+      "source": "Go 1.24.13 crypto/tls",
+      "source_commit": "96e4e2b1616c3c59577d48abcf2823bf1fdcd2e2",
+      "realization": "X25519MLKEM768 ClientHello key share",
+      "role_mapping": "audited tls.Config.Rand call order; experiment-only, not a production API recommendation"
+    },
+    {
+      "id": "rustcrypto-x-wing",
+      "source": "https://github.com/RustCrypto/KEMs",
+      "source_commit": "19275cb6fd15ee64fc5ca93342c22e94dee65f38",
+      "realization": "X-Wing ML-KEM-768 plus X25519 encapsulation"
+    },
+    {
+      "id": "liboqs-dual-pqc",
+      "source": "https://github.com/open-quantum-safe/liboqs",
+      "source_commit": "5a1a854b0dc9f2141bdc771c555ee60c37950183",
+      "realization": "ML-KEM-768 plus HQC-3 dual-PQC experiment"
+    }
+  ],
+  "architectures": [
+    "A0_SHARED",
+    "A1_LABEL_ONLY",
+    "A2_GLOBAL_SPLIT_SHAM",
+    "A3_ROLE_ROUTED",
+    "A4_HEDGED"
+  ],
+  "recipes": [
+    "nominal",
+    "origin_rng_state_reuse",
+    "origin_rng_and_context_reuse"
+  ],
+  "sample_design": {
+    "pairs_per_cell": 8,
+    "cells_per_implementation": 15,
+    "primary_pairs_per_implementation": 120,
+    "primary_pairs_total": 360,
+    "replay_pairs_total": 360,
+    "anchor_base": 1000,
+    "development_overlap": false,
+    "unit_isolation": "one child process per matched pair",
+    "schedule": "deterministic randomized permutation persisted before execution",
+    "persistence": "one canonical JSON line, flush, and fsync per completed unit"
+  },
+  "outcomes": [
+    "origin_component_freshness_preserved",
+    "peer_component_freshness_preserved",
+    "combined_artifact_freshness_preserved",
+    "honest_agreement_where_the_realization_performs_decapsulation"
+  ],
+  "analysis": {
+    "primary": "exact matched response-surface assertions against pre-frozen expectations",
+    "statistics": "no population-prevalence inference; counts are deterministic implementation observations",
+    "replay": "complete semantic replay under an independently permuted schedule",
+    "timing": "recorded only for diagnostics and excluded from claims"
+  },
+  "failure_criteria": [
+    "any unit differs from the frozen qualitative expectation",
+    "any expected architecture or recipe cell is incomplete",
+    "any source, binary, schedule, record, or summary hash is missing",
+    "replay differs semantically after excluding timing and schedule position",
+    "a claimed split is not reached at the actual randomness interface"
+  ],
+  "claim_exclusions": [
+    "field prevalence",
+    "physical fault rate",
+    "exploitability",
+    "IND-CCA proof",
+    "side-channel resistance",
+    "novelty of the RFC-8937-style hedge",
+    "submission readiness before all gates pass"
+  ]
+}

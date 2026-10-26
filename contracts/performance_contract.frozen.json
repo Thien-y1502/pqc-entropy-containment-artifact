@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "P01-PERFORMANCE-V1",
+  "frozen_at": "2026-10-26",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "research_question": "What process-level latency, CPU-time, and peak-resident-memory costs accompany the five entropy architectures in the three pinned P01 implementation realizations?",
+  "implementations": [
+    {
+      "id": "go-crypto-tls-go1.24.13",
+      "realization": "Go crypto/tls X25519MLKEM768 ClientHello generation"
+    },
+    {
+      "id": "rustcrypto-x-wing",
+      "realization": "RustCrypto X-Wing at commit 19275cb6fd15ee64fc5ca93342c22e94dee65f38"
+    },
+    {
+      "id": "liboqs-dual-pqc",
+      "realization": "liboqs 0.16.0 ML-KEM-768 plus HQC-3"
+    }
+  ],
+  "architectures": [
+    "A0_SHARED",
+    "A1_LABEL_ONLY",
+    "A2_GLOBAL_SPLIT_SHAM",
+    "A3_ROLE_ROUTED",
+    "A4_HEDGED"
+  ],
+  "recipes": [
+    "nominal",
+    "origin_rng_state_reuse",
+    "origin_rng_and_context_reuse"
+  ],
+  "execution": {
+    "phases": ["primary", "replay"],
+    "warmups_per_cell": 2,
+    "blocks_per_phase": 40,
+    "observations_per_block": 15,
+    "observations_per_implementation_phase": 600,
+    "randomization": "All 15 architecture-by-recipe cells occur once per block in a seeded random order.",
+    "container_resources": {
+      "cpu": 0.5,
+      "memory": "1Gi"
+    },
+    "cloud_region": "Southeast Asia",
+    "timeout_seconds_per_observation": 60
+  },
+  "primary_estimands": [
+    {
+      "id": "E1",
+      "quantity": "paired block-level median wall-time difference and ratio",
+      "comparisons": ["A3_ROLE_ROUTED-A0_SHARED", "A4_HEDGED-A0_SHARED"],
+      "conditioning": "nominal recipe, separately by implementation and phase"
+    },
+    {
+      "id": "E2",
+      "quantity": "paired block-level median child CPU-time difference and ratio",
+      "comparisons": ["A3_ROLE_ROUTED-A0_SHARED", "A4_HEDGED-A0_SHARED"],
+      "conditioning": "nominal recipe, separately by implementation and phase"
+    },
+    {
+      "id": "E3",
+      "quantity": "paired block-level median maximum resident set size difference and ratio",
+      "comparisons": ["A3_ROLE_ROUTED-A0_SHARED", "A4_HEDGED-A0_SHARED"],
+      "conditioning": "nominal recipe, separately by implementation and phase"
+    }
+  ],
+  "secondary_estimands": [
+    "A4_HEDGED-A3_ROLE_ROUTED paired contrasts",
+    "cell medians and 95th percentiles for every architecture-by-recipe cell",
+    "direction consistency between primary and replay phases",
+    "recipe sensitivity of architecture costs"
+  ],
+  "metrics": {
+    "wall_time_ns": "monotonic parent-observed elapsed time for one isolated pair-worker process",
+    "user_cpu_ns": "Linux wait4 child user CPU time",
+    "system_cpu_ns": "Linux wait4 child system CPU time",
+    "cpu_time_ns": "user_cpu_ns plus system_cpu_ns",
+    "max_rss_kib": "Linux wait4 ru_maxrss for the isolated child process"
+  },
+  "statistical_unit": "one randomized block containing one observation from every architecture-by-recipe cell",
+  "analysis": {
+    "location": "median of paired block-level differences and ratios",
+    "uncertainty": "95% percentile bootstrap interval over complete blocks",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261026,
+    "multiplicity_policy": "Primary conclusions are descriptive cost estimates; no null-hypothesis significance declaration is made. All prespecified contrasts are reported."
+  },
+  "failure_policy": {
+    "retain_failed_observations": true,
+    "no_post_hoc_removal": true,
+    "missing_primary_observation": "phase is incomplete and cannot support a primary estimate",
+    "unexpected_stderr_or_nonzero_exit": "observation fails and the run stops"
+  },
+  "success_criteria": [
+    "All 600 observations complete in each implementation-phase run.",
+    "Every worker output preserves the declared identity and honest-agreement checks where applicable.",
+    "Evidence-envelope hashes match the exact schedule, records, summary, and warmup records.",
+    "Primary and replay estimates are both reported; disagreement is retained rather than averaged away."
+  ],
+  "claim_boundaries": [
+    "The measurements characterize the pinned containerized harness, not universal deployment throughput.",
+    "Process startup is intentionally included; the study does not isolate cryptographic primitive cycles.",
+    "Shared cloud placement and 0.5-vCPU scheduling can contribute noise.",
+    "A cost estimate cannot establish security superiority, exploitability, field prevalence, or a production API recommendation.",
+    "No architecture is called faster or cheaper unless the executed paired estimates support that bounded wording in both phases."
+  ]
+}

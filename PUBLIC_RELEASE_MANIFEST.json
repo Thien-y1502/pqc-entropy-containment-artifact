@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "artifact_version": "1.0.0",
+  "release_scope": "Self-contained experimental artifact; no parent-platform source or cloud account configuration",
+  "confirmation": {
+    "executed_units": 720,
+    "implementations": 3,
+    "architectures": 5,
+    "recipes": 3,
+    "pairs_per_cell_per_phase": 8,
+    "phases": ["primary", "replay"],
+    "contract_sha256": "3e97662e3c9c39e8f26a4c38f615b3080511b75fc8cf36e1ebfb3a416126a77c",
+    "integrity_status": "PASS"
+  },
+  "performance": {
+    "measured_observations": 3600,
+    "complete_blocks_per_implementation_phase": 40,
+    "implementation_phases": 6,
+    "cells_per_block": 15,
+    "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+    "analysis_files": {
+      "cell_summary.csv": "1a2071cfb80fa46bda37ca96407e17119b20d5db996a082603f1776610da4d29",
+      "paired_contrasts.csv": "35272221f8ae4004710391d6e274617f2c8377ae491158fbe0bee444c8cb57ad",
+      "performance_analysis.json": "88eb76aa66342d0e1bdf73cacdb056dba9b1391636ff47373a4162f5a5d8dcaa"
+    }
+  },
+  "build_identities": {
+    "go_binary_sha256": "939fe80e0dbff6f4d9acbfeb86f4d32ce7dac442cc469b0f0513e65530db9eb9",
+    "rust_binary_sha256": "1a286b78eb609cd4ac1c45b122c3a074a4eb80f3e286463d28d69d959d5c0c2c",
+    "liboqs_binary_sha256": "dceffac7844d9a3ccbfec8ee05be45229ab360702ee62767dd02ff4126f74016"
+  },
+  "claim_boundary": {
+    "supported": "Bounded entropy-containment and freshness behavior in the pinned implementations",
+    "not_established": [
+      "exploitability or a CVE",
+      "physical-fault feasibility",
+      "IND-CCA failure",
+      "field prevalence",
+      "zero overhead or performance equivalence",
+      "production deployment safety"
+    ]
+  }
+}

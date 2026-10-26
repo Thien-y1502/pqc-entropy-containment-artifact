@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "null_hypothesis_tests": "not used",
+    "paired_block_median": true
+  },
+  "contract_id": "P01-PERFORMANCE-V1",
+  "limitations": [
+    "Process startup is included.",
+    "Container scheduling noise is not a field deployment distribution.",
+    "Results do not establish security superiority or a production API recommendation."
+  ],
+  "run_metadata": [
+    {
+      "binary_sha256": "939fe80e0dbff6f4d9acbfeb86f4d32ce7dac442cc469b0f0513e65530db9eb9",
+      "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+      "evidence_envelope_sha256": "cca70bc11536e2905301d6ea3f6b5b6e05376774925333aa7a2c10790295f5e6",
+      "implementation": "go-crypto-tls-go1.24.13",
+      "phase": "primary",
+      "run": "go124-primary"
+    },
+    {
+      "binary_sha256": "939fe80e0dbff6f4d9acbfeb86f4d32ce7dac442cc469b0f0513e65530db9eb9",
+      "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+      "evidence_envelope_sha256": "436f3fe296c295dcd92bbfd5f00571325533c483403395d252ba3ab3574209be",
+      "implementation": "go-crypto-tls-go1.24.13",
+      "phase": "replay",
+      "run": "go124-replay"
+    },
+    {
+      "binary_sha256": "1a286b78eb609cd4ac1c45b122c3a074a4eb80f3e286463d28d69d959d5c0c2c",
+      "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+      "evidence_envelope_sha256": "fa7b736b251a0619e4b0b5f3dc9de9cc51773d866b00fc5ce470a88eafd8cf13",
+      "implementation": "rustcrypto-x-wing",
+      "phase": "primary",
+      "run": "xwing-primary"
+    },
+    {
+      "binary_sha256": "1a286b78eb609cd4ac1c45b122c3a074a4eb80f3e286463d28d69d959d5c0c2c",
+      "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+      "evidence_envelope_sha256": "d7b69543ccf4f04fe8696bc4cf34ebded4e02560603e40aee3d5a74001dc9cf7",
+      "implementation": "rustcrypto-x-wing",
+      "phase": "replay",
+      "run": "xwing-replay"
+    },
+    {
+      "binary_sha256": "dceffac7844d9a3ccbfec8ee05be45229ab360702ee62767dd02ff4126f74016",
+      "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+      "evidence_envelope_sha256": "2e1c2b5e01551629e66e03c3554b3cdeb5ecad5b000543a4e1918c658b037aca",
+      "implementation": "liboqs-dual-pqc",
+      "phase": "primary",
+      "run": "liboqs-primary"
+    },
+    {
+      "binary_sha256": "dceffac7844d9a3ccbfec8ee05be45229ab360702ee62767dd02ff4126f74016",
+      "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+      "evidence_envelope_sha256": "a837043e90dca96d5c66ba23bfb3aa42d6423a3cdaa191d7a90a7da321f2cbf5",
+      "implementation": "liboqs-dual-pqc",
+      "phase": "replay",
+      "run": "liboqs-replay"
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "process-level container cost characterization; 3 implementations x 2 phases x 40 randomized complete blocks",
+  "status": "PASS",
+  "total_measured_observations": 3600
+}

@@ -1,0 +1,54 @@
+FROM gcc:13.4.0-bookworm@sha256:3617a214e52a25bde5375dc9503b5e67f01b6c7322a30137e2790aa8e6db5d1f AS build
+
+ARG LIBOQS_VERSION=0.16.0
+ARG LIBOQS_SHA256=162d5b510518ee5f285f82fa1f16402a885176e818bf1b1a4c3c91c9a2f01eae
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates cmake curl ninja-build \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /build
+RUN curl -fSL --retry 3 \
+      "https://github.com/open-quantum-safe/liboqs/archive/refs/tags/${LIBOQS_VERSION}.tar.gz" \
+      -o liboqs.tar.gz \
+    && echo "${LIBOQS_SHA256}  liboqs.tar.gz" | sha256sum -c - \
+    && tar -xzf liboqs.tar.gz \
+    && cmake -S "liboqs-${LIBOQS_VERSION}" -B oqs-build -GNinja \
+      -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+      -DCMAKE_INSTALL_PREFIX=/opt/oqs \
+      -DBUILD_SHARED_LIBS=OFF \
+      -DOQS_DIST_BUILD=OFF \
+      -DOQS_OPT_TARGET=generic \
+      -DOQS_USE_OPENSSL=OFF \
+      -DOQS_BUILD_ONLY_LIB=OFF \
+      -DOQS_MINIMAL_BUILD="KEM_ml_kem_768;KEM_hqc_3" \
+    && cmake --build oqs-build --parallel 2 --target oqs kat_kem test_kem \
+    && oqs-build/tests/test_kem "ML-KEM-768" \
+    && oqs-build/tests/test_kem "HQC-3" \
+    && oqs-build/tests/kat_kem "ML-KEM-768" > /tmp/mlkem.kat \
+    && echo "5352539586b6c3df58be6158a6250aeff402bd73060b0a3de68850ac074c17c3  /tmp/mlkem.kat" | sha256sum -c - \
+    && oqs-build/tests/kat_kem "HQC-3" > /tmp/hqc.kat \
+    && echo "b88d4cfe517446854b5d3c85e6602518a526c5eb95571348ce4ab5915faa05b6  /tmp/hqc.kat" | sha256sum -c - \
+    && cmake --install oqs-build
+
+COPY src/liboqs/pair_worker.c /build/pair_worker.c
+RUN gcc -O2 -g -std=c11 -Wall -Wextra -Werror \
+      -I/opt/oqs/include -I"/build/liboqs-${LIBOQS_VERSION}/src/common/sha3" \
+      /build/pair_worker.c /opt/oqs/lib/liboqs.a \
+      -o /build/pair-worker -lm -pthread \
+    && /build/pair-worker --unit-architecture A3_ROLE_ROUTED \
+      --unit-recipe origin_rng_state_reuse --unit-anchor 1000 --unit-trial 1001 \
+      | tee /tmp/pair-smoke.json \
+    && grep -q '"mlkem_freshness_preserved":false' /tmp/pair-smoke.json \
+    && grep -q '"hqc_freshness_preserved":true' /tmp/pair-smoke.json
+
+FROM python:3.13-slim-bookworm@sha256:e32be0e55814a08977501ca863271d9bd02443710db8f2afaf8372e2c4508530
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+RUN groupadd --gid 10001 artifact \
+    && useradd --uid 10001 --gid 10001 --create-home artifact \
+    && mkdir -p /opt/p01 /data \
+    && chown -R 10001:10001 /data
+COPY --from=build /build/pair-worker /opt/p01/pair-worker
+COPY runners/runner.py /opt/p01/confirmation_runner.py
+COPY runners/benchmark_runner.py /opt/p01/benchmark_runner.py
+COPY contracts/performance_contract.frozen.json /opt/p01/performance_contract.frozen.json
+USER 10001:10001
+ENTRYPOINT ["python", "/opt/p01/confirmation_runner.py", "--binary", "/opt/p01/pair-worker", "--implementation", "liboqs-dual-pqc"]

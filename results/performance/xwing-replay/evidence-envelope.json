@@ -1,0 +1,10 @@
+{
+  "files": {
+    "records.jsonl": "ff35bffc48c7a45713dddb5838e0eed2d825ad04742b7cd66ee565365d1eacee",
+    "schedule.json": "c48c365d8c4e83f63d5152210db656b892275fee1c5f8332d296cbe9fa978419",
+    "summary.json": "45821ad6bd36f1ab8c1ac95acf6789818b2e609c8b6f17eb9c50845d940841f4",
+    "warmup-records.jsonl": "dc5a22499136bd210469f939a94a004a43dd0fa5056f343d6fac9ca386ac5651"
+  },
+  "schema_version": "1.0",
+  "status": "PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "binary_sha256": "939fe80e0dbff6f4d9acbfeb86f4d32ce7dac442cc469b0f0513e65530db9eb9",
+  "blocks": 40,
+  "complete": true,
+  "contract_id": "P01-PERFORMANCE-V1",
+  "contract_sha256": "08b9f7ce1e491bd7eb98fdfe0828ebec73af273d4cf324a0a42ae4b292cd46a2",
+  "environment": {
+    "machine": "x86_64",
+    "platform": "Linux-6.6.150.1-1.azl3-x86_64-with-glibc2.36",
+    "python": "3.13.17"
+  },
+  "implementation": "go-crypto-tls-go1.24.13",
+  "limitations": [
+    "Process startup is included in every observation.",
+    "Measurements describe the pinned container and allocated cloud resources.",
+    "No deployment-throughput, primitive-cycle, or universal performance claim is supported."
+  ],
+  "observations": 600,
+  "phase": "replay",
+  "schema_version": "1.0",
+  "scientific_status": "PROCESS_LEVEL_COST_CHARACTERIZATION",
+  "warmup_observations": 30
+}

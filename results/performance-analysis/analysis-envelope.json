@@ -1,0 +1,8 @@
+{
+  "files": {
+    "cell_summary.csv": "1a2071cfb80fa46bda37ca96407e17119b20d5db996a082603f1776610da4d29",
+    "paired_contrasts.csv": "35272221f8ae4004710391d6e274617f2c8377ae491158fbe0bee444c8cb57ad",
+    "performance_analysis.json": "88eb76aa66342d0e1bdf73cacdb056dba9b1391636ff47373a4162f5a5d8dcaa"
+  },
+  "schema_version": "1.0"
+}

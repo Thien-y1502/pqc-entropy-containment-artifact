@@ -1,0 +1,124 @@
+{
+  "all_units_match_frozen_expectations": true,
+  "binary_sha256": "6d4b88c3b0f9b2632754a89b87a4b1d8c4392e154fb1f9260b788a958488879c",
+  "cells": {
+    "A0_SHARED|nominal": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 8,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A0_SHARED|origin_rng_and_context_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A0_SHARED|origin_rng_state_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A1_LABEL_ONLY|nominal": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 8,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A1_LABEL_ONLY|origin_rng_and_context_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A1_LABEL_ONLY|origin_rng_state_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A2_GLOBAL_SPLIT_SHAM|nominal": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 8,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A2_GLOBAL_SPLIT_SHAM|origin_rng_and_context_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A2_GLOBAL_SPLIT_SHAM|origin_rng_state_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A3_ROLE_ROUTED|nominal": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 8,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A3_ROLE_ROUTED|origin_rng_and_context_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A3_ROLE_ROUTED|origin_rng_state_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A4_HEDGED|nominal": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 8,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    },
+    "A4_HEDGED|origin_rng_and_context_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 0,
+      "origin_freshness_preserved": 0,
+      "pairs": 8,
+      "peer_freshness_preserved": 0
+    },
+    "A4_HEDGED|origin_rng_state_reuse": {
+      "expectation_matches": 8,
+      "hybrid_freshness_preserved": 8,
+      "origin_freshness_preserved": 8,
+      "pairs": 8,
+      "peer_freshness_preserved": 8
+    }
+  },
+  "contract_id": "P01-CONFIRMATION-V1",
+  "implementation": "rustcrypto-x-wing",
+  "limitations": [
+    "Exact deterministic response-surface confirmation; no population prevalence estimate.",
+    "Software-controlled entropy rollback; no physical fault-rate or exploitability claim.",
+    "Freshness is tested by artifact equality; IND-CCA security is not experimentally proved.",
+    "A4 is an RFC-8937-style prior-art baseline, not a claimed new hedge."
+  ],
+  "pairs_per_cell": 8,
+  "phase": "replay",
+  "schema_version": "1.0",
+  "scientific_status": "BOUNDED_CONFIRMATION_NOT_FIELD_PREVALENCE",
+  "units": 120
+}

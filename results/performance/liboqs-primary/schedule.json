@@ -1,0 +1,5411 @@
+{
+  "blocks": 40,
+  "contract_id": "P01-PERFORMANCE-V1",
+  "implementation": "liboqs-dual-pqc",
+  "phase": "primary",
+  "schedule_seed": 2026102603,
+  "schema_version": "1.0",
+  "trial_base": 500000,
+  "units": [
+    {
+      "anchor_trial": 500000,
+      "architecture": "A4_HEDGED",
+      "block_index": 0,
+      "comparison_trial": 500001,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "6199f0ccdb63ca44fd47"
+    },
+    {
+      "anchor_trial": 500002,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 0,
+      "comparison_trial": 500003,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "c8dad04c17ae9ab2a471"
+    },
+    {
+      "anchor_trial": 500004,
+      "architecture": "A4_HEDGED",
+      "block_index": 0,
+      "comparison_trial": 500005,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "96e3e46d534272ceae9c"
+    },
+    {
+      "anchor_trial": 500006,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 0,
+      "comparison_trial": 500007,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "6e7758b5989dd8c23497"
+    },
+    {
+      "anchor_trial": 500008,
+      "architecture": "A0_SHARED",
+      "block_index": 0,
+      "comparison_trial": 500009,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "f38121cf3a70b58af9bc"
+    },
+    {
+      "anchor_trial": 500010,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 0,
+      "comparison_trial": 500011,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "13bbaec9e9b3dec11a3e"
+    },
+    {
+      "anchor_trial": 500012,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 0,
+      "comparison_trial": 500013,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b8e89e40cbe4fb31b6a6"
+    },
+    {
+      "anchor_trial": 500014,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 0,
+      "comparison_trial": 500015,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "c6193315384bdca155a2"
+    },
+    {
+      "anchor_trial": 500016,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 0,
+      "comparison_trial": 500017,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "3a8850c5e4a18573924f"
+    },
+    {
+      "anchor_trial": 500018,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 0,
+      "comparison_trial": 500019,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "fed6b6004991ca555d59"
+    },
+    {
+      "anchor_trial": 500020,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 0,
+      "comparison_trial": 500021,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "921564823375d099c558"
+    },
+    {
+      "anchor_trial": 500022,
+      "architecture": "A4_HEDGED",
+      "block_index": 0,
+      "comparison_trial": 500023,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0d25eb86794eb9b0086f"
+    },
+    {
+      "anchor_trial": 500024,
+      "architecture": "A0_SHARED",
+      "block_index": 0,
+      "comparison_trial": 500025,
+      "order_in_block": 12,
+      "recipe": "nominal",
+      "unit_id": "17831958807d37e434a8"
+    },
+    {
+      "anchor_trial": 500026,
+      "architecture": "A0_SHARED",
+      "block_index": 0,
+      "comparison_trial": 500027,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "76f00d9fce82767341db"
+    },
+    {
+      "anchor_trial": 500028,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 0,
+      "comparison_trial": 500029,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f565566df440d931259d"
+    },
+    {
+      "anchor_trial": 500100,
+      "architecture": "A4_HEDGED",
+      "block_index": 1,
+      "comparison_trial": 500101,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "8fd0f2ba5f75ca0cff32"
+    },
+    {
+      "anchor_trial": 500102,
+      "architecture": "A0_SHARED",
+      "block_index": 1,
+      "comparison_trial": 500103,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "91558b360e3d675908f5"
+    },
+    {
+      "anchor_trial": 500104,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 1,
+      "comparison_trial": 500105,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d8971ea47aa534b54136"
+    },
+    {
+      "anchor_trial": 500106,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 1,
+      "comparison_trial": 500107,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a071561b69e994e34bf7"
+    },
+    {
+      "anchor_trial": 500108,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 1,
+      "comparison_trial": 500109,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "031527667a558673ea5c"
+    },
+    {
+      "anchor_trial": 500110,
+      "architecture": "A0_SHARED",
+      "block_index": 1,
+      "comparison_trial": 500111,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "bf6676d430df447b539e"
+    },
+    {
+      "anchor_trial": 500112,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 1,
+      "comparison_trial": 500113,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "770547608d3c66637ad7"
+    },
+    {
+      "anchor_trial": 500114,
+      "architecture": "A4_HEDGED",
+      "block_index": 1,
+      "comparison_trial": 500115,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "30066596e5d22ad64321"
+    },
+    {
+      "anchor_trial": 500116,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 1,
+      "comparison_trial": 500117,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "36a3cb16b0dd808e5a6f"
+    },
+    {
+      "anchor_trial": 500118,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 1,
+      "comparison_trial": 500119,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d7c3f562527c6d0d0847"
+    },
+    {
+      "anchor_trial": 500120,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 1,
+      "comparison_trial": 500121,
+      "order_in_block": 10,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d11de80775bfc1c1ae47"
+    },
+    {
+      "anchor_trial": 500122,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 1,
+      "comparison_trial": 500123,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "adeb49e8ceeea39dd344"
+    },
+    {
+      "anchor_trial": 500124,
+      "architecture": "A4_HEDGED",
+      "block_index": 1,
+      "comparison_trial": 500125,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "675acf9af09079c6d26f"
+    },
+    {
+      "anchor_trial": 500126,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 1,
+      "comparison_trial": 500127,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "fa5bcda212967061545d"
+    },
+    {
+      "anchor_trial": 500128,
+      "architecture": "A0_SHARED",
+      "block_index": 1,
+      "comparison_trial": 500129,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "50a48e61556481a61cc3"
+    },
+    {
+      "anchor_trial": 500200,
+      "architecture": "A0_SHARED",
+      "block_index": 2,
+      "comparison_trial": 500201,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "6c77a21662da0d3595e1"
+    },
+    {
+      "anchor_trial": 500202,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 2,
+      "comparison_trial": 500203,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a1f5e6f07f95cf36c2fc"
+    },
+    {
+      "anchor_trial": 500204,
+      "architecture": "A4_HEDGED",
+      "block_index": 2,
+      "comparison_trial": 500205,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4ca0d3c1d44342819890"
+    },
+    {
+      "anchor_trial": 500206,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 2,
+      "comparison_trial": 500207,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4db10f295d5579aa5e86"
+    },
+    {
+      "anchor_trial": 500208,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 2,
+      "comparison_trial": 500209,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0cdf6391f9ad74007c3a"
+    },
+    {
+      "anchor_trial": 500210,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 2,
+      "comparison_trial": 500211,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "64d7e2823bd9ccac37b7"
+    },
+    {
+      "anchor_trial": 500212,
+      "architecture": "A0_SHARED",
+      "block_index": 2,
+      "comparison_trial": 500213,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "89c059392862ab130c7d"
+    },
+    {
+      "anchor_trial": 500214,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 2,
+      "comparison_trial": 500215,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "8b8bfecddcc255caf817"
+    },
+    {
+      "anchor_trial": 500216,
+      "architecture": "A0_SHARED",
+      "block_index": 2,
+      "comparison_trial": 500217,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f9c9fe3f42642bee7713"
+    },
+    {
+      "anchor_trial": 500218,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 2,
+      "comparison_trial": 500219,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "783e8965f28fc1d25b84"
+    },
+    {
+      "anchor_trial": 500220,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 2,
+      "comparison_trial": 500221,
+      "order_in_block": 10,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2c40a5577965f2f522be"
+    },
+    {
+      "anchor_trial": 500222,
+      "architecture": "A4_HEDGED",
+      "block_index": 2,
+      "comparison_trial": 500223,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "7a24253338e01855c9f1"
+    },
+    {
+      "anchor_trial": 500224,
+      "architecture": "A4_HEDGED",
+      "block_index": 2,
+      "comparison_trial": 500225,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b38b870f8bf812d7d925"
+    },
+    {
+      "anchor_trial": 500226,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 2,
+      "comparison_trial": 500227,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "cacd27b197a8f9649028"
+    },
+    {
+      "anchor_trial": 500228,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 2,
+      "comparison_trial": 500229,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7d1491f619be7f10d5d3"
+    },
+    {
+      "anchor_trial": 500300,
+      "architecture": "A4_HEDGED",
+      "block_index": 3,
+      "comparison_trial": 500301,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ce7b0ce7b69672a32fe3"
+    },
+    {
+      "anchor_trial": 500302,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 3,
+      "comparison_trial": 500303,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b0cd26017c0439c11ca0"
+    },
+    {
+      "anchor_trial": 500304,
+      "architecture": "A4_HEDGED",
+      "block_index": 3,
+      "comparison_trial": 500305,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "2ac81c55f7a47cf84745"
+    },
+    {
+      "anchor_trial": 500306,
+      "architecture": "A0_SHARED",
+      "block_index": 3,
+      "comparison_trial": 500307,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "2e1e212676cfd62010a5"
+    },
+    {
+      "anchor_trial": 500308,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 3,
+      "comparison_trial": 500309,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "8a4a4955518edc7b7c11"
+    },
+    {
+      "anchor_trial": 500310,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 3,
+      "comparison_trial": 500311,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "28c83afac44804d644f7"
+    },
+    {
+      "anchor_trial": 500312,
+      "architecture": "A0_SHARED",
+      "block_index": 3,
+      "comparison_trial": 500313,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "aa72306c934620311b02"
+    },
+    {
+      "anchor_trial": 500314,
+      "architecture": "A4_HEDGED",
+      "block_index": 3,
+      "comparison_trial": 500315,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "8ac928662645bc9d30ee"
+    },
+    {
+      "anchor_trial": 500316,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 3,
+      "comparison_trial": 500317,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "2aee0b1ab61453865ff5"
+    },
+    {
+      "anchor_trial": 500318,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 3,
+      "comparison_trial": 500319,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "48f6a83ad64c8e46c79d"
+    },
+    {
+      "anchor_trial": 500320,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 3,
+      "comparison_trial": 500321,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "3817a973fb8ac6f42df5"
+    },
+    {
+      "anchor_trial": 500322,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 3,
+      "comparison_trial": 500323,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "84c61abb898ac238e675"
+    },
+    {
+      "anchor_trial": 500324,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 3,
+      "comparison_trial": 500325,
+      "order_in_block": 12,
+      "recipe": "nominal",
+      "unit_id": "89f3f481d9a74599da71"
+    },
+    {
+      "anchor_trial": 500326,
+      "architecture": "A0_SHARED",
+      "block_index": 3,
+      "comparison_trial": 500327,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "f7ff5708e9e98bd596a6"
+    },
+    {
+      "anchor_trial": 500328,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 3,
+      "comparison_trial": 500329,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "6df8da62241f79c8dc92"
+    },
+    {
+      "anchor_trial": 500400,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 4,
+      "comparison_trial": 500401,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3f82d883109d6043f19c"
+    },
+    {
+      "anchor_trial": 500402,
+      "architecture": "A4_HEDGED",
+      "block_index": 4,
+      "comparison_trial": 500403,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "51ba97b84fd8f373dc3d"
+    },
+    {
+      "anchor_trial": 500404,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 4,
+      "comparison_trial": 500405,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "01e1543eb0dd694ac984"
+    },
+    {
+      "anchor_trial": 500406,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 4,
+      "comparison_trial": 500407,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9a732673156e146be36a"
+    },
+    {
+      "anchor_trial": 500408,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 4,
+      "comparison_trial": 500409,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2d61ea63f492f5fd46b1"
+    },
+    {
+      "anchor_trial": 500410,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 4,
+      "comparison_trial": 500411,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4379ca3d618f2ef5b019"
+    },
+    {
+      "anchor_trial": 500412,
+      "architecture": "A0_SHARED",
+      "block_index": 4,
+      "comparison_trial": 500413,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "477ffaacb4dc580008b4"
+    },
+    {
+      "anchor_trial": 500414,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 4,
+      "comparison_trial": 500415,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4987de573d3a7eccb62a"
+    },
+    {
+      "anchor_trial": 500416,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 4,
+      "comparison_trial": 500417,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "5dea553a3ceafa601163"
+    },
+    {
+      "anchor_trial": 500418,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 4,
+      "comparison_trial": 500419,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "66f48a5cca6a6f75d515"
+    },
+    {
+      "anchor_trial": 500420,
+      "architecture": "A0_SHARED",
+      "block_index": 4,
+      "comparison_trial": 500421,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "a0592faa161758f060dd"
+    },
+    {
+      "anchor_trial": 500422,
+      "architecture": "A0_SHARED",
+      "block_index": 4,
+      "comparison_trial": 500423,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9beb339fd8ea4514257e"
+    },
+    {
+      "anchor_trial": 500424,
+      "architecture": "A4_HEDGED",
+      "block_index": 4,
+      "comparison_trial": 500425,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4d5c7993ad93bcca3421"
+    },
+    {
+      "anchor_trial": 500426,
+      "architecture": "A4_HEDGED",
+      "block_index": 4,
+      "comparison_trial": 500427,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "bf66a6dff6adaea7e5d1"
+    },
+    {
+      "anchor_trial": 500428,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 4,
+      "comparison_trial": 500429,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "27d980c0d9210b562b14"
+    },
+    {
+      "anchor_trial": 500500,
+      "architecture": "A4_HEDGED",
+      "block_index": 5,
+      "comparison_trial": 500501,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "cb4f1a2edf714b9a1b6d"
+    },
+    {
+      "anchor_trial": 500502,
+      "architecture": "A0_SHARED",
+      "block_index": 5,
+      "comparison_trial": 500503,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "750090babf4be27ed402"
+    },
+    {
+      "anchor_trial": 500504,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 5,
+      "comparison_trial": 500505,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "edadd950878052b17a17"
+    },
+    {
+      "anchor_trial": 500506,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 5,
+      "comparison_trial": 500507,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4262f4b10d7af63244c7"
+    },
+    {
+      "anchor_trial": 500508,
+      "architecture": "A0_SHARED",
+      "block_index": 5,
+      "comparison_trial": 500509,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "c89ebc734f22c45c5e2f"
+    },
+    {
+      "anchor_trial": 500510,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 5,
+      "comparison_trial": 500511,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "857b1d4270e4d93e6a0d"
+    },
+    {
+      "anchor_trial": 500512,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 5,
+      "comparison_trial": 500513,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9e73e426dda42a752f20"
+    },
+    {
+      "anchor_trial": 500514,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 5,
+      "comparison_trial": 500515,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "5af2b98f6a0497b07fd7"
+    },
+    {
+      "anchor_trial": 500516,
+      "architecture": "A4_HEDGED",
+      "block_index": 5,
+      "comparison_trial": 500517,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ef58887c02beb8bc503b"
+    },
+    {
+      "anchor_trial": 500518,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 5,
+      "comparison_trial": 500519,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "73a23b604a7fe35aed63"
+    },
+    {
+      "anchor_trial": 500520,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 5,
+      "comparison_trial": 500521,
+      "order_in_block": 10,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "7fb75e5a27ef62aa563a"
+    },
+    {
+      "anchor_trial": 500522,
+      "architecture": "A4_HEDGED",
+      "block_index": 5,
+      "comparison_trial": 500523,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "b249cd172a484790630d"
+    },
+    {
+      "anchor_trial": 500524,
+      "architecture": "A0_SHARED",
+      "block_index": 5,
+      "comparison_trial": 500525,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0e0f8436f4bf4a79613d"
+    },
+    {
+      "anchor_trial": 500526,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 5,
+      "comparison_trial": 500527,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "ea6b7bee37d41a01ecb4"
+    },
+    {
+      "anchor_trial": 500528,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 5,
+      "comparison_trial": 500529,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "70613851b49a13f1f63a"
+    },
+    {
+      "anchor_trial": 500600,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 6,
+      "comparison_trial": 500601,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "18704d46b15f8327cd1c"
+    },
+    {
+      "anchor_trial": 500602,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 6,
+      "comparison_trial": 500603,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "944df225ebd16c4ec9a2"
+    },
+    {
+      "anchor_trial": 500604,
+      "architecture": "A0_SHARED",
+      "block_index": 6,
+      "comparison_trial": 500605,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "31fd4a6e8e0c3f937647"
+    },
+    {
+      "anchor_trial": 500606,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 6,
+      "comparison_trial": 500607,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "4a147fc5104830f432b0"
+    },
+    {
+      "anchor_trial": 500608,
+      "architecture": "A4_HEDGED",
+      "block_index": 6,
+      "comparison_trial": 500609,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "43477723071999bba0b4"
+    },
+    {
+      "anchor_trial": 500610,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 6,
+      "comparison_trial": 500611,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "cf998c2e30e6b2bcdcae"
+    },
+    {
+      "anchor_trial": 500612,
+      "architecture": "A4_HEDGED",
+      "block_index": 6,
+      "comparison_trial": 500613,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "abe1aee3dc9aa42eb414"
+    },
+    {
+      "anchor_trial": 500614,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 6,
+      "comparison_trial": 500615,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c28ea3fd127669795941"
+    },
+    {
+      "anchor_trial": 500616,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 6,
+      "comparison_trial": 500617,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f1987abd01bede89f4d3"
+    },
+    {
+      "anchor_trial": 500618,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 6,
+      "comparison_trial": 500619,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "bcb061f7aa8efcffc7e7"
+    },
+    {
+      "anchor_trial": 500620,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 6,
+      "comparison_trial": 500621,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "0bf2826aabe9c581b0a3"
+    },
+    {
+      "anchor_trial": 500622,
+      "architecture": "A4_HEDGED",
+      "block_index": 6,
+      "comparison_trial": 500623,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a0dc23bddcc635feb8c2"
+    },
+    {
+      "anchor_trial": 500624,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 6,
+      "comparison_trial": 500625,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "8ef15f8e43cb6998a7b1"
+    },
+    {
+      "anchor_trial": 500626,
+      "architecture": "A0_SHARED",
+      "block_index": 6,
+      "comparison_trial": 500627,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "5374235680e2870d447d"
+    },
+    {
+      "anchor_trial": 500628,
+      "architecture": "A0_SHARED",
+      "block_index": 6,
+      "comparison_trial": 500629,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9b54dd25d5996e9146a5"
+    },
+    {
+      "anchor_trial": 500700,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 7,
+      "comparison_trial": 500701,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "8ed8609b74f63aebb9ca"
+    },
+    {
+      "anchor_trial": 500702,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 7,
+      "comparison_trial": 500703,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d5953584dc6ebac66417"
+    },
+    {
+      "anchor_trial": 500704,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 7,
+      "comparison_trial": 500705,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e031b5c5e20aecf86543"
+    },
+    {
+      "anchor_trial": 500706,
+      "architecture": "A4_HEDGED",
+      "block_index": 7,
+      "comparison_trial": 500707,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "6abd86c475f8ca1608b2"
+    },
+    {
+      "anchor_trial": 500708,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 7,
+      "comparison_trial": 500709,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "d0f4e3c8249f86da02f1"
+    },
+    {
+      "anchor_trial": 500710,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 7,
+      "comparison_trial": 500711,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "1838f9bbe2b9d1756032"
+    },
+    {
+      "anchor_trial": 500712,
+      "architecture": "A0_SHARED",
+      "block_index": 7,
+      "comparison_trial": 500713,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "64559faabab9a6710c41"
+    },
+    {
+      "anchor_trial": 500714,
+      "architecture": "A0_SHARED",
+      "block_index": 7,
+      "comparison_trial": 500715,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "4550fd6dc5fff96dbd6e"
+    },
+    {
+      "anchor_trial": 500716,
+      "architecture": "A0_SHARED",
+      "block_index": 7,
+      "comparison_trial": 500717,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7d833c1f73dba7153843"
+    },
+    {
+      "anchor_trial": 500718,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 7,
+      "comparison_trial": 500719,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "8f0e0e5983795e75e888"
+    },
+    {
+      "anchor_trial": 500720,
+      "architecture": "A4_HEDGED",
+      "block_index": 7,
+      "comparison_trial": 500721,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "d535e529cbd43c9a4276"
+    },
+    {
+      "anchor_trial": 500722,
+      "architecture": "A4_HEDGED",
+      "block_index": 7,
+      "comparison_trial": 500723,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "99b69406d937d293b4b5"
+    },
+    {
+      "anchor_trial": 500724,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 7,
+      "comparison_trial": 500725,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "aa61eb3bf2eedfa6b88e"
+    },
+    {
+      "anchor_trial": 500726,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 7,
+      "comparison_trial": 500727,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "bc6c6601a1cf788c2dc7"
+    },
+    {
+      "anchor_trial": 500728,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 7,
+      "comparison_trial": 500729,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "db8d8e621b2b97c8c54a"
+    },
+    {
+      "anchor_trial": 500800,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 8,
+      "comparison_trial": 500801,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "04a1348dc6beb3fbb952"
+    },
+    {
+      "anchor_trial": 500802,
+      "architecture": "A0_SHARED",
+      "block_index": 8,
+      "comparison_trial": 500803,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "cfbfebdaa41c575d2d4f"
+    },
+    {
+      "anchor_trial": 500804,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 8,
+      "comparison_trial": 500805,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "13ffde2ac06d611aede1"
+    },
+    {
+      "anchor_trial": 500806,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 8,
+      "comparison_trial": 500807,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3ddbd75bce79a5ac822c"
+    },
+    {
+      "anchor_trial": 500808,
+      "architecture": "A0_SHARED",
+      "block_index": 8,
+      "comparison_trial": 500809,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "0d44eb64833698f8d881"
+    },
+    {
+      "anchor_trial": 500810,
+      "architecture": "A0_SHARED",
+      "block_index": 8,
+      "comparison_trial": 500811,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3f88fbac27b3f1027e5d"
+    },
+    {
+      "anchor_trial": 500812,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 8,
+      "comparison_trial": 500813,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "1f6c0e8421b31da94081"
+    },
+    {
+      "anchor_trial": 500814,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 8,
+      "comparison_trial": 500815,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "6e07098a5b6e7ec9a65f"
+    },
+    {
+      "anchor_trial": 500816,
+      "architecture": "A4_HEDGED",
+      "block_index": 8,
+      "comparison_trial": 500817,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "a487594c29be96c8f198"
+    },
+    {
+      "anchor_trial": 500818,
+      "architecture": "A4_HEDGED",
+      "block_index": 8,
+      "comparison_trial": 500819,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c7b98e1a6bf19df4de64"
+    },
+    {
+      "anchor_trial": 500820,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 8,
+      "comparison_trial": 500821,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "3b8165727dbf40655779"
+    },
+    {
+      "anchor_trial": 500822,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 8,
+      "comparison_trial": 500823,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "ce081ccdab46e36aa476"
+    },
+    {
+      "anchor_trial": 500824,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 8,
+      "comparison_trial": 500825,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b23976fa6f4c096b42ae"
+    },
+    {
+      "anchor_trial": 500826,
+      "architecture": "A4_HEDGED",
+      "block_index": 8,
+      "comparison_trial": 500827,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f4fcc0afce7725078081"
+    },
+    {
+      "anchor_trial": 500828,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 8,
+      "comparison_trial": 500829,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "0f9d002016790d4c0aa3"
+    },
+    {
+      "anchor_trial": 500900,
+      "architecture": "A0_SHARED",
+      "block_index": 9,
+      "comparison_trial": 500901,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ee688c1aa980b241cccf"
+    },
+    {
+      "anchor_trial": 500902,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 9,
+      "comparison_trial": 500903,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "5caafabb2b5998bb8cdf"
+    },
+    {
+      "anchor_trial": 500904,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 9,
+      "comparison_trial": 500905,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "8f57b4168cfea3e69b2e"
+    },
+    {
+      "anchor_trial": 500906,
+      "architecture": "A4_HEDGED",
+      "block_index": 9,
+      "comparison_trial": 500907,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "8886a767a70ab6b134c7"
+    },
+    {
+      "anchor_trial": 500908,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 9,
+      "comparison_trial": 500909,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "70d985d8fab391f83f23"
+    },
+    {
+      "anchor_trial": 500910,
+      "architecture": "A0_SHARED",
+      "block_index": 9,
+      "comparison_trial": 500911,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "5a3d1b94c1bed2b84655"
+    },
+    {
+      "anchor_trial": 500912,
+      "architecture": "A0_SHARED",
+      "block_index": 9,
+      "comparison_trial": 500913,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "8fe68a4fb85e302c6c5b"
+    },
+    {
+      "anchor_trial": 500914,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 9,
+      "comparison_trial": 500915,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ee255fa6c2f63c0f5d94"
+    },
+    {
+      "anchor_trial": 500916,
+      "architecture": "A4_HEDGED",
+      "block_index": 9,
+      "comparison_trial": 500917,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "57a68b020920b1132dc6"
+    },
+    {
+      "anchor_trial": 500918,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 9,
+      "comparison_trial": 500919,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "80f9efc5a6efa081c2a3"
+    },
+    {
+      "anchor_trial": 500920,
+      "architecture": "A4_HEDGED",
+      "block_index": 9,
+      "comparison_trial": 500921,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "b7cc37988ba62daec265"
+    },
+    {
+      "anchor_trial": 500922,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 9,
+      "comparison_trial": 500923,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "74f6baf28053e14c4233"
+    },
+    {
+      "anchor_trial": 500924,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 9,
+      "comparison_trial": 500925,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c5f8ff258a7226d67383"
+    },
+    {
+      "anchor_trial": 500926,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 9,
+      "comparison_trial": 500927,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "df22c7952b38011ea6b1"
+    },
+    {
+      "anchor_trial": 500928,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 9,
+      "comparison_trial": 500929,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "236c5238ede585636eae"
+    },
+    {
+      "anchor_trial": 501000,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 10,
+      "comparison_trial": 501001,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "356b0ce55416bc7df362"
+    },
+    {
+      "anchor_trial": 501002,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 10,
+      "comparison_trial": 501003,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7cb964a2030bfc62426e"
+    },
+    {
+      "anchor_trial": 501004,
+      "architecture": "A0_SHARED",
+      "block_index": 10,
+      "comparison_trial": 501005,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b66441fce95093d6272f"
+    },
+    {
+      "anchor_trial": 501006,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 10,
+      "comparison_trial": 501007,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "6b5738a5adc20c06544f"
+    },
+    {
+      "anchor_trial": 501008,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 10,
+      "comparison_trial": 501009,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "c1e8e718c0232094c48c"
+    },
+    {
+      "anchor_trial": 501010,
+      "architecture": "A4_HEDGED",
+      "block_index": 10,
+      "comparison_trial": 501011,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "1bdcfe459014669934a6"
+    },
+    {
+      "anchor_trial": 501012,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 10,
+      "comparison_trial": 501013,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "89e01b74f9327fd42ab9"
+    },
+    {
+      "anchor_trial": 501014,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 10,
+      "comparison_trial": 501015,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "6f4b4ac83ef675b3359b"
+    },
+    {
+      "anchor_trial": 501016,
+      "architecture": "A4_HEDGED",
+      "block_index": 10,
+      "comparison_trial": 501017,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "25962a6719bc885e6d22"
+    },
+    {
+      "anchor_trial": 501018,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 10,
+      "comparison_trial": 501019,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "38ce3e58c22214bcddc4"
+    },
+    {
+      "anchor_trial": 501020,
+      "architecture": "A0_SHARED",
+      "block_index": 10,
+      "comparison_trial": 501021,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "1f594917cc64ee962086"
+    },
+    {
+      "anchor_trial": 501022,
+      "architecture": "A4_HEDGED",
+      "block_index": 10,
+      "comparison_trial": 501023,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "2c4a85a4703891917c4b"
+    },
+    {
+      "anchor_trial": 501024,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 10,
+      "comparison_trial": 501025,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f78586ba9f87be911f79"
+    },
+    {
+      "anchor_trial": 501026,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 10,
+      "comparison_trial": 501027,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b735754021fe67bb7f23"
+    },
+    {
+      "anchor_trial": 501028,
+      "architecture": "A0_SHARED",
+      "block_index": 10,
+      "comparison_trial": 501029,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b89eee14f1e502fb0414"
+    },
+    {
+      "anchor_trial": 501100,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 11,
+      "comparison_trial": 501101,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a2e09d47c8497184e7e4"
+    },
+    {
+      "anchor_trial": 501102,
+      "architecture": "A0_SHARED",
+      "block_index": 11,
+      "comparison_trial": 501103,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "cd0615f96b051bc3e8a6"
+    },
+    {
+      "anchor_trial": 501104,
+      "architecture": "A4_HEDGED",
+      "block_index": 11,
+      "comparison_trial": 501105,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "09331f82ce948c9e0a94"
+    },
+    {
+      "anchor_trial": 501106,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 11,
+      "comparison_trial": 501107,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "5f6d70010d8b68746031"
+    },
+    {
+      "anchor_trial": 501108,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 11,
+      "comparison_trial": 501109,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "6510a94e991809fd4171"
+    },
+    {
+      "anchor_trial": 501110,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 11,
+      "comparison_trial": 501111,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "11f810218e5dbe5cf15d"
+    },
+    {
+      "anchor_trial": 501112,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 11,
+      "comparison_trial": 501113,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "594ec49bfd924ea6ad84"
+    },
+    {
+      "anchor_trial": 501114,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 11,
+      "comparison_trial": 501115,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "f8d3125ac24282771429"
+    },
+    {
+      "anchor_trial": 501116,
+      "architecture": "A0_SHARED",
+      "block_index": 11,
+      "comparison_trial": 501117,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "7fa5ee336f784608533b"
+    },
+    {
+      "anchor_trial": 501118,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 11,
+      "comparison_trial": 501119,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "9179f2d76dab1b43d091"
+    },
+    {
+      "anchor_trial": 501120,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 11,
+      "comparison_trial": 501121,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7dc1e66a810c38a3be10"
+    },
+    {
+      "anchor_trial": 501122,
+      "architecture": "A4_HEDGED",
+      "block_index": 11,
+      "comparison_trial": 501123,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b04a93556e82ce9d3682"
+    },
+    {
+      "anchor_trial": 501124,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 11,
+      "comparison_trial": 501125,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "fea26ed24e4d61183050"
+    },
+    {
+      "anchor_trial": 501126,
+      "architecture": "A0_SHARED",
+      "block_index": 11,
+      "comparison_trial": 501127,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "bae0fcc8b32442d6a21b"
+    },
+    {
+      "anchor_trial": 501128,
+      "architecture": "A4_HEDGED",
+      "block_index": 11,
+      "comparison_trial": 501129,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "609a8d5fcb7b2fac5728"
+    },
+    {
+      "anchor_trial": 501200,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 12,
+      "comparison_trial": 501201,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "bd96fbf9ce9e238b8d45"
+    },
+    {
+      "anchor_trial": 501202,
+      "architecture": "A0_SHARED",
+      "block_index": 12,
+      "comparison_trial": 501203,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "7bd1cc52ae04505f5974"
+    },
+    {
+      "anchor_trial": 501204,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 12,
+      "comparison_trial": 501205,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4e7b59e25e17eb802032"
+    },
+    {
+      "anchor_trial": 501206,
+      "architecture": "A4_HEDGED",
+      "block_index": 12,
+      "comparison_trial": 501207,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "73b4586dcf7377f942cc"
+    },
+    {
+      "anchor_trial": 501208,
+      "architecture": "A0_SHARED",
+      "block_index": 12,
+      "comparison_trial": 501209,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "92ad7c1b74e4319d38d6"
+    },
+    {
+      "anchor_trial": 501210,
+      "architecture": "A4_HEDGED",
+      "block_index": 12,
+      "comparison_trial": 501211,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "531284a56d8b664e69c9"
+    },
+    {
+      "anchor_trial": 501212,
+      "architecture": "A4_HEDGED",
+      "block_index": 12,
+      "comparison_trial": 501213,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "258b870066bbb0cb10d3"
+    },
+    {
+      "anchor_trial": 501214,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 12,
+      "comparison_trial": 501215,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "66d8d1a93de8245c4793"
+    },
+    {
+      "anchor_trial": 501216,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 12,
+      "comparison_trial": 501217,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "a3e78c73fd524183bebd"
+    },
+    {
+      "anchor_trial": 501218,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 12,
+      "comparison_trial": 501219,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "459b44383684163f9061"
+    },
+    {
+      "anchor_trial": 501220,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 12,
+      "comparison_trial": 501221,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a0bbadbf7cd9e0f2cdaa"
+    },
+    {
+      "anchor_trial": 501222,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 12,
+      "comparison_trial": 501223,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "902efa4603fa9904d9f7"
+    },
+    {
+      "anchor_trial": 501224,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 12,
+      "comparison_trial": 501225,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7b13ed4b5a7b4f37d0d9"
+    },
+    {
+      "anchor_trial": 501226,
+      "architecture": "A0_SHARED",
+      "block_index": 12,
+      "comparison_trial": 501227,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "bc06f5d61c91851b2e12"
+    },
+    {
+      "anchor_trial": 501228,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 12,
+      "comparison_trial": 501229,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "99d7eee1e81c3c726b4d"
+    },
+    {
+      "anchor_trial": 501300,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 13,
+      "comparison_trial": 501301,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "c0c890154c7f9fd6e561"
+    },
+    {
+      "anchor_trial": 501302,
+      "architecture": "A0_SHARED",
+      "block_index": 13,
+      "comparison_trial": 501303,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3446e026cf687fc2d676"
+    },
+    {
+      "anchor_trial": 501304,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 13,
+      "comparison_trial": 501305,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "6ec279131d12c4db915f"
+    },
+    {
+      "anchor_trial": 501306,
+      "architecture": "A0_SHARED",
+      "block_index": 13,
+      "comparison_trial": 501307,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "312f5f0bd867b52f15b7"
+    },
+    {
+      "anchor_trial": 501308,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 13,
+      "comparison_trial": 501309,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f08c46a444982334cc90"
+    },
+    {
+      "anchor_trial": 501310,
+      "architecture": "A4_HEDGED",
+      "block_index": 13,
+      "comparison_trial": 501311,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "72429a3885a1f1977f89"
+    },
+    {
+      "anchor_trial": 501312,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 13,
+      "comparison_trial": 501313,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "fc1fb4ef8262ff284389"
+    },
+    {
+      "anchor_trial": 501314,
+      "architecture": "A4_HEDGED",
+      "block_index": 13,
+      "comparison_trial": 501315,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0f48d48a03ef895e7728"
+    },
+    {
+      "anchor_trial": 501316,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 13,
+      "comparison_trial": 501317,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "20c104581434feac087b"
+    },
+    {
+      "anchor_trial": 501318,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 13,
+      "comparison_trial": 501319,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "24dad572a33a383c81ea"
+    },
+    {
+      "anchor_trial": 501320,
+      "architecture": "A0_SHARED",
+      "block_index": 13,
+      "comparison_trial": 501321,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "c24b3db17dbf61e37d4f"
+    },
+    {
+      "anchor_trial": 501322,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 13,
+      "comparison_trial": 501323,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "e1e8abb11b8406e8ff9a"
+    },
+    {
+      "anchor_trial": 501324,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 13,
+      "comparison_trial": 501325,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "1cdda096fb254e63ab33"
+    },
+    {
+      "anchor_trial": 501326,
+      "architecture": "A4_HEDGED",
+      "block_index": 13,
+      "comparison_trial": 501327,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "68f957bcd148ed9336d2"
+    },
+    {
+      "anchor_trial": 501328,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 13,
+      "comparison_trial": 501329,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b7f2809537b02b32c577"
+    },
+    {
+      "anchor_trial": 501400,
+      "architecture": "A4_HEDGED",
+      "block_index": 14,
+      "comparison_trial": 501401,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f9529b5e7b27c19b8d87"
+    },
+    {
+      "anchor_trial": 501402,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 14,
+      "comparison_trial": 501403,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b86bea3fe4abdafafb0d"
+    },
+    {
+      "anchor_trial": 501404,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 14,
+      "comparison_trial": 501405,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "c08b69f38d21e3f239d8"
+    },
+    {
+      "anchor_trial": 501406,
+      "architecture": "A0_SHARED",
+      "block_index": 14,
+      "comparison_trial": 501407,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "07b3ca06901421ab6565"
+    },
+    {
+      "anchor_trial": 501408,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 14,
+      "comparison_trial": 501409,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "1d11d596048c209f7d2d"
+    },
+    {
+      "anchor_trial": 501410,
+      "architecture": "A4_HEDGED",
+      "block_index": 14,
+      "comparison_trial": 501411,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "eee5b4dc97d3c757120c"
+    },
+    {
+      "anchor_trial": 501412,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 14,
+      "comparison_trial": 501413,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d339335ebe077952fdbd"
+    },
+    {
+      "anchor_trial": 501414,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 14,
+      "comparison_trial": 501415,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "1a7fe8130e0c12848562"
+    },
+    {
+      "anchor_trial": 501416,
+      "architecture": "A0_SHARED",
+      "block_index": 14,
+      "comparison_trial": 501417,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "144302768e4ab7579c14"
+    },
+    {
+      "anchor_trial": 501418,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 14,
+      "comparison_trial": 501419,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "0d334984d65cc942a02a"
+    },
+    {
+      "anchor_trial": 501420,
+      "architecture": "A0_SHARED",
+      "block_index": 14,
+      "comparison_trial": 501421,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "87ad817a045342730c85"
+    },
+    {
+      "anchor_trial": 501422,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 14,
+      "comparison_trial": 501423,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f947fd806f760f313ea2"
+    },
+    {
+      "anchor_trial": 501424,
+      "architecture": "A4_HEDGED",
+      "block_index": 14,
+      "comparison_trial": 501425,
+      "order_in_block": 12,
+      "recipe": "nominal",
+      "unit_id": "e5df017667683bebe969"
+    },
+    {
+      "anchor_trial": 501426,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 14,
+      "comparison_trial": 501427,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0fd3d14b41de587a80d4"
+    },
+    {
+      "anchor_trial": 501428,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 14,
+      "comparison_trial": 501429,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a9dd0f2999c5ab35be0f"
+    },
+    {
+      "anchor_trial": 501500,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 15,
+      "comparison_trial": 501501,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "da21bec7d713da145c97"
+    },
+    {
+      "anchor_trial": 501502,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 15,
+      "comparison_trial": 501503,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "1e0c2191994d42bf2abb"
+    },
+    {
+      "anchor_trial": 501504,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 15,
+      "comparison_trial": 501505,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7c910aae2edfa4cba880"
+    },
+    {
+      "anchor_trial": 501506,
+      "architecture": "A0_SHARED",
+      "block_index": 15,
+      "comparison_trial": 501507,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a9e46388ced6bdf28352"
+    },
+    {
+      "anchor_trial": 501508,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 15,
+      "comparison_trial": 501509,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "7092238dd5dd7f34d800"
+    },
+    {
+      "anchor_trial": 501510,
+      "architecture": "A4_HEDGED",
+      "block_index": 15,
+      "comparison_trial": 501511,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f17f38cec47b56dffab7"
+    },
+    {
+      "anchor_trial": 501512,
+      "architecture": "A4_HEDGED",
+      "block_index": 15,
+      "comparison_trial": 501513,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "87054ffc114bc93dd8ca"
+    },
+    {
+      "anchor_trial": 501514,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 15,
+      "comparison_trial": 501515,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0ed756d7d009b5a9363f"
+    },
+    {
+      "anchor_trial": 501516,
+      "architecture": "A0_SHARED",
+      "block_index": 15,
+      "comparison_trial": 501517,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2e7e9ace865822789c0d"
+    },
+    {
+      "anchor_trial": 501518,
+      "architecture": "A0_SHARED",
+      "block_index": 15,
+      "comparison_trial": 501519,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "50b1cdb8d043c05467df"
+    },
+    {
+      "anchor_trial": 501520,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 15,
+      "comparison_trial": 501521,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "afe8666c5f404d3df278"
+    },
+    {
+      "anchor_trial": 501522,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 15,
+      "comparison_trial": 501523,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "0bd17d5f652f99c7ecde"
+    },
+    {
+      "anchor_trial": 501524,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 15,
+      "comparison_trial": 501525,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "657a093a04dfee4e9a3a"
+    },
+    {
+      "anchor_trial": 501526,
+      "architecture": "A4_HEDGED",
+      "block_index": 15,
+      "comparison_trial": 501527,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "04418affb7cac628d01d"
+    },
+    {
+      "anchor_trial": 501528,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 15,
+      "comparison_trial": 501529,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c0f2d2cdfe9ab354406c"
+    },
+    {
+      "anchor_trial": 501600,
+      "architecture": "A0_SHARED",
+      "block_index": 16,
+      "comparison_trial": 501601,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e92e8ade1161656ddf4e"
+    },
+    {
+      "anchor_trial": 501602,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 16,
+      "comparison_trial": 501603,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "5fc78da8f553ff2c582f"
+    },
+    {
+      "anchor_trial": 501604,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 16,
+      "comparison_trial": 501605,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "d42676129f530fd36fd5"
+    },
+    {
+      "anchor_trial": 501606,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 16,
+      "comparison_trial": 501607,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "6c51cb9cd0f765707e44"
+    },
+    {
+      "anchor_trial": 501608,
+      "architecture": "A4_HEDGED",
+      "block_index": 16,
+      "comparison_trial": 501609,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "1a9a4ba8837e3f95ea7b"
+    },
+    {
+      "anchor_trial": 501610,
+      "architecture": "A4_HEDGED",
+      "block_index": 16,
+      "comparison_trial": 501611,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ff2752e792c40aa0e921"
+    },
+    {
+      "anchor_trial": 501612,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 16,
+      "comparison_trial": 501613,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "3854dbb5f88d22a282ca"
+    },
+    {
+      "anchor_trial": 501614,
+      "architecture": "A4_HEDGED",
+      "block_index": 16,
+      "comparison_trial": 501615,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "2363de5a873d6dc84725"
+    },
+    {
+      "anchor_trial": 501616,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 16,
+      "comparison_trial": 501617,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "1173218fc91bea6e15fd"
+    },
+    {
+      "anchor_trial": 501618,
+      "architecture": "A0_SHARED",
+      "block_index": 16,
+      "comparison_trial": 501619,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "46de7855e652260d422d"
+    },
+    {
+      "anchor_trial": 501620,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 16,
+      "comparison_trial": 501621,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "bdbacb5c2fcda7189ded"
+    },
+    {
+      "anchor_trial": 501622,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 16,
+      "comparison_trial": 501623,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a268947f0dee063f5d6e"
+    },
+    {
+      "anchor_trial": 501624,
+      "architecture": "A0_SHARED",
+      "block_index": 16,
+      "comparison_trial": 501625,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a01bdda29826c796289c"
+    },
+    {
+      "anchor_trial": 501626,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 16,
+      "comparison_trial": 501627,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e799596aba5cd2579d93"
+    },
+    {
+      "anchor_trial": 501628,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 16,
+      "comparison_trial": 501629,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "04b4071fe61bc658eafd"
+    },
+    {
+      "anchor_trial": 501700,
+      "architecture": "A0_SHARED",
+      "block_index": 17,
+      "comparison_trial": 501701,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "110d1fcf47bbfb52ed7f"
+    },
+    {
+      "anchor_trial": 501702,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 17,
+      "comparison_trial": 501703,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4cb483b03149a6e2d8af"
+    },
+    {
+      "anchor_trial": 501704,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 17,
+      "comparison_trial": 501705,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "0441eb5599cacb67fb53"
+    },
+    {
+      "anchor_trial": 501706,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 17,
+      "comparison_trial": 501707,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "9cf76812ac2cbd540956"
+    },
+    {
+      "anchor_trial": 501708,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 17,
+      "comparison_trial": 501709,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d0ae66f207c8a36e2422"
+    },
+    {
+      "anchor_trial": 501710,
+      "architecture": "A4_HEDGED",
+      "block_index": 17,
+      "comparison_trial": 501711,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e5e172df00de2532a888"
+    },
+    {
+      "anchor_trial": 501712,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 17,
+      "comparison_trial": 501713,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "29fd4e1b123751d0d350"
+    },
+    {
+      "anchor_trial": 501714,
+      "architecture": "A4_HEDGED",
+      "block_index": 17,
+      "comparison_trial": 501715,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "81e63c7839f161676b1e"
+    },
+    {
+      "anchor_trial": 501716,
+      "architecture": "A4_HEDGED",
+      "block_index": 17,
+      "comparison_trial": 501717,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "791d80c053ba3b3996b8"
+    },
+    {
+      "anchor_trial": 501718,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 17,
+      "comparison_trial": 501719,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "16985467c9491d3203a4"
+    },
+    {
+      "anchor_trial": 501720,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 17,
+      "comparison_trial": 501721,
+      "order_in_block": 10,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "50c2068b134dd39c619f"
+    },
+    {
+      "anchor_trial": 501722,
+      "architecture": "A0_SHARED",
+      "block_index": 17,
+      "comparison_trial": 501723,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "96ab531e716f2ad8279c"
+    },
+    {
+      "anchor_trial": 501724,
+      "architecture": "A0_SHARED",
+      "block_index": 17,
+      "comparison_trial": 501725,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "be1800e21da39705d22c"
+    },
+    {
+      "anchor_trial": 501726,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 17,
+      "comparison_trial": 501727,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "5280fdc7499536c3723e"
+    },
+    {
+      "anchor_trial": 501728,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 17,
+      "comparison_trial": 501729,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "90e7269fd783dfa119a4"
+    },
+    {
+      "anchor_trial": 501800,
+      "architecture": "A4_HEDGED",
+      "block_index": 18,
+      "comparison_trial": 501801,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "eddc2f5e566868e7f76f"
+    },
+    {
+      "anchor_trial": 501802,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 18,
+      "comparison_trial": 501803,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "26fc10fe541683711ebd"
+    },
+    {
+      "anchor_trial": 501804,
+      "architecture": "A4_HEDGED",
+      "block_index": 18,
+      "comparison_trial": 501805,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "b4bc648c9cd00df6107b"
+    },
+    {
+      "anchor_trial": 501806,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 18,
+      "comparison_trial": 501807,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "1cb3632003927ab5b022"
+    },
+    {
+      "anchor_trial": 501808,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 18,
+      "comparison_trial": 501809,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "9961e30651bc880c431f"
+    },
+    {
+      "anchor_trial": 501810,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 18,
+      "comparison_trial": 501811,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "f0dd649ab0e1975ea4a6"
+    },
+    {
+      "anchor_trial": 501812,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 18,
+      "comparison_trial": 501813,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "906312d8f6d3406e1a91"
+    },
+    {
+      "anchor_trial": 501814,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 18,
+      "comparison_trial": 501815,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "eb3d5186986de252b4e7"
+    },
+    {
+      "anchor_trial": 501816,
+      "architecture": "A0_SHARED",
+      "block_index": 18,
+      "comparison_trial": 501817,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "17d59279d203e3ff5caf"
+    },
+    {
+      "anchor_trial": 501818,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 18,
+      "comparison_trial": 501819,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2c42620b2c6eaed339b7"
+    },
+    {
+      "anchor_trial": 501820,
+      "architecture": "A0_SHARED",
+      "block_index": 18,
+      "comparison_trial": 501821,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "a6a7deb7c58503254ea3"
+    },
+    {
+      "anchor_trial": 501822,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 18,
+      "comparison_trial": 501823,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "181fc25d377381163c2d"
+    },
+    {
+      "anchor_trial": 501824,
+      "architecture": "A4_HEDGED",
+      "block_index": 18,
+      "comparison_trial": 501825,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "627192f16772bb2ff273"
+    },
+    {
+      "anchor_trial": 501826,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 18,
+      "comparison_trial": 501827,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c48413c12c9b5587cb90"
+    },
+    {
+      "anchor_trial": 501828,
+      "architecture": "A0_SHARED",
+      "block_index": 18,
+      "comparison_trial": 501829,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "dede2650e541085a20fe"
+    },
+    {
+      "anchor_trial": 501900,
+      "architecture": "A0_SHARED",
+      "block_index": 19,
+      "comparison_trial": 501901,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "63e14429152c1051ad3c"
+    },
+    {
+      "anchor_trial": 501902,
+      "architecture": "A4_HEDGED",
+      "block_index": 19,
+      "comparison_trial": 501903,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "698bc04ef287983c15b5"
+    },
+    {
+      "anchor_trial": 501904,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 19,
+      "comparison_trial": 501905,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "1d3af8cff68ee9d5cfbf"
+    },
+    {
+      "anchor_trial": 501906,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 19,
+      "comparison_trial": 501907,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "51ceff7473967b2b8fff"
+    },
+    {
+      "anchor_trial": 501908,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 19,
+      "comparison_trial": 501909,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "7d6e214ebfbb159d1eaa"
+    },
+    {
+      "anchor_trial": 501910,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 19,
+      "comparison_trial": 501911,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "121b0842f9acd64dcc35"
+    },
+    {
+      "anchor_trial": 501912,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 19,
+      "comparison_trial": 501913,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "b78a63e2f45b716d00da"
+    },
+    {
+      "anchor_trial": 501914,
+      "architecture": "A4_HEDGED",
+      "block_index": 19,
+      "comparison_trial": 501915,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "2316649f91d1ca2260cb"
+    },
+    {
+      "anchor_trial": 501916,
+      "architecture": "A0_SHARED",
+      "block_index": 19,
+      "comparison_trial": 501917,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "de34e363de28c0f0b567"
+    },
+    {
+      "anchor_trial": 501918,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 19,
+      "comparison_trial": 501919,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "7edf22c618d001ae2a84"
+    },
+    {
+      "anchor_trial": 501920,
+      "architecture": "A0_SHARED",
+      "block_index": 19,
+      "comparison_trial": 501921,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "b1eec4d3caab67496a8c"
+    },
+    {
+      "anchor_trial": 501922,
+      "architecture": "A4_HEDGED",
+      "block_index": 19,
+      "comparison_trial": 501923,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "07752e1d1d583c6caee3"
+    },
+    {
+      "anchor_trial": 501924,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 19,
+      "comparison_trial": 501925,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "db2d940ddaac07f0e89e"
+    },
+    {
+      "anchor_trial": 501926,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 19,
+      "comparison_trial": 501927,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c3b5e33d0f4254dcb12e"
+    },
+    {
+      "anchor_trial": 501928,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 19,
+      "comparison_trial": 501929,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d77b28fb04d660894ea7"
+    },
+    {
+      "anchor_trial": 502000,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 20,
+      "comparison_trial": 502001,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f6ef8346ce80ed6f9dcd"
+    },
+    {
+      "anchor_trial": 502002,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 20,
+      "comparison_trial": 502003,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "6fc0fddd07c2fc6cc0c2"
+    },
+    {
+      "anchor_trial": 502004,
+      "architecture": "A0_SHARED",
+      "block_index": 20,
+      "comparison_trial": 502005,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0b32c7bcca4509eb0a0f"
+    },
+    {
+      "anchor_trial": 502006,
+      "architecture": "A0_SHARED",
+      "block_index": 20,
+      "comparison_trial": 502007,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "0b46a1532d6fa3744327"
+    },
+    {
+      "anchor_trial": 502008,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 20,
+      "comparison_trial": 502009,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "e8b723ad21da7dbcf302"
+    },
+    {
+      "anchor_trial": 502010,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 20,
+      "comparison_trial": 502011,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "52f915f06a421d0474cc"
+    },
+    {
+      "anchor_trial": 502012,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 20,
+      "comparison_trial": 502013,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "dc1702770d7eb2c1ea63"
+    },
+    {
+      "anchor_trial": 502014,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 20,
+      "comparison_trial": 502015,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "eaf07f8c3e0adc7b78cb"
+    },
+    {
+      "anchor_trial": 502016,
+      "architecture": "A4_HEDGED",
+      "block_index": 20,
+      "comparison_trial": 502017,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "c2cf0f025c387ca9dbbc"
+    },
+    {
+      "anchor_trial": 502018,
+      "architecture": "A4_HEDGED",
+      "block_index": 20,
+      "comparison_trial": 502019,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "bd7aa4f8c5d444bff327"
+    },
+    {
+      "anchor_trial": 502020,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 20,
+      "comparison_trial": 502021,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "6ccc76917e34058b3947"
+    },
+    {
+      "anchor_trial": 502022,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 20,
+      "comparison_trial": 502023,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "7acc55fbf6866385c5ca"
+    },
+    {
+      "anchor_trial": 502024,
+      "architecture": "A0_SHARED",
+      "block_index": 20,
+      "comparison_trial": 502025,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b19f103eeaf5e3e40ddb"
+    },
+    {
+      "anchor_trial": 502026,
+      "architecture": "A4_HEDGED",
+      "block_index": 20,
+      "comparison_trial": 502027,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0cc7ec5edeb63a0e09f6"
+    },
+    {
+      "anchor_trial": 502028,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 20,
+      "comparison_trial": 502029,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e948d365e4a6d72811ef"
+    },
+    {
+      "anchor_trial": 502100,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 21,
+      "comparison_trial": 502101,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "339c05e09303b96df733"
+    },
+    {
+      "anchor_trial": 502102,
+      "architecture": "A0_SHARED",
+      "block_index": 21,
+      "comparison_trial": 502103,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "8c82ee66692b39cabe37"
+    },
+    {
+      "anchor_trial": 502104,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 21,
+      "comparison_trial": 502105,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0750a3947f94f77eae9f"
+    },
+    {
+      "anchor_trial": 502106,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 21,
+      "comparison_trial": 502107,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "01a0c5a7eb092a5af898"
+    },
+    {
+      "anchor_trial": 502108,
+      "architecture": "A0_SHARED",
+      "block_index": 21,
+      "comparison_trial": 502109,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9578f9318e07fde34c6b"
+    },
+    {
+      "anchor_trial": 502110,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 21,
+      "comparison_trial": 502111,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "e5bd43981e3ea947cef3"
+    },
+    {
+      "anchor_trial": 502112,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 21,
+      "comparison_trial": 502113,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "d6387b5fb922875aac48"
+    },
+    {
+      "anchor_trial": 502114,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 21,
+      "comparison_trial": 502115,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "896ddcc5ca8a2d7bbc6d"
+    },
+    {
+      "anchor_trial": 502116,
+      "architecture": "A4_HEDGED",
+      "block_index": 21,
+      "comparison_trial": 502117,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d0bede73c15a959cdfe7"
+    },
+    {
+      "anchor_trial": 502118,
+      "architecture": "A0_SHARED",
+      "block_index": 21,
+      "comparison_trial": 502119,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "b89bd4fc3b7cefb4db53"
+    },
+    {
+      "anchor_trial": 502120,
+      "architecture": "A4_HEDGED",
+      "block_index": 21,
+      "comparison_trial": 502121,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "584e3db1a89556a54be9"
+    },
+    {
+      "anchor_trial": 502122,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 21,
+      "comparison_trial": 502123,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "1df73041966c0943623d"
+    },
+    {
+      "anchor_trial": 502124,
+      "architecture": "A4_HEDGED",
+      "block_index": 21,
+      "comparison_trial": 502125,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "bb81009b5bd2d745167b"
+    },
+    {
+      "anchor_trial": 502126,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 21,
+      "comparison_trial": 502127,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e4f0bae957e825dd3b8f"
+    },
+    {
+      "anchor_trial": 502128,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 21,
+      "comparison_trial": 502129,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "49a671d5ea3080359442"
+    },
+    {
+      "anchor_trial": 502200,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 22,
+      "comparison_trial": 502201,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e88d5d4be55623c1a517"
+    },
+    {
+      "anchor_trial": 502202,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 22,
+      "comparison_trial": 502203,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "579fb36dace83a629102"
+    },
+    {
+      "anchor_trial": 502204,
+      "architecture": "A0_SHARED",
+      "block_index": 22,
+      "comparison_trial": 502205,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4bbd93db78b1b6cf8577"
+    },
+    {
+      "anchor_trial": 502206,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 22,
+      "comparison_trial": 502207,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "e392b9506ae63eaa061e"
+    },
+    {
+      "anchor_trial": 502208,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 22,
+      "comparison_trial": 502209,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3ff3125f2a3786e9d21b"
+    },
+    {
+      "anchor_trial": 502210,
+      "architecture": "A4_HEDGED",
+      "block_index": 22,
+      "comparison_trial": 502211,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a1ab815d794f88be74e8"
+    },
+    {
+      "anchor_trial": 502212,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 22,
+      "comparison_trial": 502213,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "6a7d938adeed9ebfe0ba"
+    },
+    {
+      "anchor_trial": 502214,
+      "architecture": "A4_HEDGED",
+      "block_index": 22,
+      "comparison_trial": 502215,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "398b369265659dbf3125"
+    },
+    {
+      "anchor_trial": 502216,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 22,
+      "comparison_trial": 502217,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "3c2f548b5ca531bd80d8"
+    },
+    {
+      "anchor_trial": 502218,
+      "architecture": "A0_SHARED",
+      "block_index": 22,
+      "comparison_trial": 502219,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "c226d5c4b809feb90f14"
+    },
+    {
+      "anchor_trial": 502220,
+      "architecture": "A4_HEDGED",
+      "block_index": 22,
+      "comparison_trial": 502221,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "03ab6b1b15f5349092b1"
+    },
+    {
+      "anchor_trial": 502222,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 22,
+      "comparison_trial": 502223,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e5e299c2335ee362c1ad"
+    },
+    {
+      "anchor_trial": 502224,
+      "architecture": "A0_SHARED",
+      "block_index": 22,
+      "comparison_trial": 502225,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "65e9f96ade8570ecb2b1"
+    },
+    {
+      "anchor_trial": 502226,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 22,
+      "comparison_trial": 502227,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e72628fc7ed3a6a0cbfc"
+    },
+    {
+      "anchor_trial": 502228,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 22,
+      "comparison_trial": 502229,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "cf2b8774ac95d02174eb"
+    },
+    {
+      "anchor_trial": 502300,
+      "architecture": "A0_SHARED",
+      "block_index": 23,
+      "comparison_trial": 502301,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e1db334798e132aabbe9"
+    },
+    {
+      "anchor_trial": 502302,
+      "architecture": "A4_HEDGED",
+      "block_index": 23,
+      "comparison_trial": 502303,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d67df0173cebef5ac75c"
+    },
+    {
+      "anchor_trial": 502304,
+      "architecture": "A4_HEDGED",
+      "block_index": 23,
+      "comparison_trial": 502305,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "8a586116d3eea213bbd6"
+    },
+    {
+      "anchor_trial": 502306,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 23,
+      "comparison_trial": 502307,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "58231fcc2c38e28f47ed"
+    },
+    {
+      "anchor_trial": 502308,
+      "architecture": "A0_SHARED",
+      "block_index": 23,
+      "comparison_trial": 502309,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4cd74decb274ed4b5db2"
+    },
+    {
+      "anchor_trial": 502310,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 23,
+      "comparison_trial": 502311,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ba46ac290d4cfe40e410"
+    },
+    {
+      "anchor_trial": 502312,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 23,
+      "comparison_trial": 502313,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "de1f04b993a20c508143"
+    },
+    {
+      "anchor_trial": 502314,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 23,
+      "comparison_trial": 502315,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "039975a28b2067fe55b3"
+    },
+    {
+      "anchor_trial": 502316,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 23,
+      "comparison_trial": 502317,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "d79d619736f049bbcc4f"
+    },
+    {
+      "anchor_trial": 502318,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 23,
+      "comparison_trial": 502319,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "568e27e80f44e6899a7e"
+    },
+    {
+      "anchor_trial": 502320,
+      "architecture": "A0_SHARED",
+      "block_index": 23,
+      "comparison_trial": 502321,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "3b1d28bba6d7007bf25e"
+    },
+    {
+      "anchor_trial": 502322,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 23,
+      "comparison_trial": 502323,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a0b977da9875616c587f"
+    },
+    {
+      "anchor_trial": 502324,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 23,
+      "comparison_trial": 502325,
+      "order_in_block": 12,
+      "recipe": "nominal",
+      "unit_id": "d7a3d76993b8a678a6f7"
+    },
+    {
+      "anchor_trial": 502326,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 23,
+      "comparison_trial": 502327,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "fe7af9c8ff62a553088d"
+    },
+    {
+      "anchor_trial": 502328,
+      "architecture": "A4_HEDGED",
+      "block_index": 23,
+      "comparison_trial": 502329,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "23ad901b6c60f953c7b8"
+    },
+    {
+      "anchor_trial": 502400,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 24,
+      "comparison_trial": 502401,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "39b94d7a95154633d822"
+    },
+    {
+      "anchor_trial": 502402,
+      "architecture": "A0_SHARED",
+      "block_index": 24,
+      "comparison_trial": 502403,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "72e6fe6aae2a857d40ef"
+    },
+    {
+      "anchor_trial": 502404,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 24,
+      "comparison_trial": 502405,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "52ff8e366b554355f447"
+    },
+    {
+      "anchor_trial": 502406,
+      "architecture": "A4_HEDGED",
+      "block_index": 24,
+      "comparison_trial": 502407,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "22711b2e1441d26d3510"
+    },
+    {
+      "anchor_trial": 502408,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 24,
+      "comparison_trial": 502409,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "539b04dc4f8c7669205c"
+    },
+    {
+      "anchor_trial": 502410,
+      "architecture": "A4_HEDGED",
+      "block_index": 24,
+      "comparison_trial": 502411,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "30bb31807c442eae96ad"
+    },
+    {
+      "anchor_trial": 502412,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 24,
+      "comparison_trial": 502413,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "10cf0d9384f6f320a47a"
+    },
+    {
+      "anchor_trial": 502414,
+      "architecture": "A0_SHARED",
+      "block_index": 24,
+      "comparison_trial": 502415,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "fa48c60c554a2b438b87"
+    },
+    {
+      "anchor_trial": 502416,
+      "architecture": "A0_SHARED",
+      "block_index": 24,
+      "comparison_trial": 502417,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "34023ed21445e9622971"
+    },
+    {
+      "anchor_trial": 502418,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 24,
+      "comparison_trial": 502419,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "488edf42ad283a607682"
+    },
+    {
+      "anchor_trial": 502420,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 24,
+      "comparison_trial": 502421,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4aaf98587c9b9c3b8b14"
+    },
+    {
+      "anchor_trial": 502422,
+      "architecture": "A4_HEDGED",
+      "block_index": 24,
+      "comparison_trial": 502423,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "092bc702dfdfbddaf6b3"
+    },
+    {
+      "anchor_trial": 502424,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 24,
+      "comparison_trial": 502425,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "30f574445cdbed5e768a"
+    },
+    {
+      "anchor_trial": 502426,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 24,
+      "comparison_trial": 502427,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "5b202370883e44efe7fb"
+    },
+    {
+      "anchor_trial": 502428,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 24,
+      "comparison_trial": 502429,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "c3132e56d751f44bf4ec"
+    },
+    {
+      "anchor_trial": 502500,
+      "architecture": "A0_SHARED",
+      "block_index": 25,
+      "comparison_trial": 502501,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "0faed1540d8655da9797"
+    },
+    {
+      "anchor_trial": 502502,
+      "architecture": "A4_HEDGED",
+      "block_index": 25,
+      "comparison_trial": 502503,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "2a1c4868f9fd35de9cc8"
+    },
+    {
+      "anchor_trial": 502504,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 25,
+      "comparison_trial": 502505,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "3a788fd9a9de8e25289a"
+    },
+    {
+      "anchor_trial": 502506,
+      "architecture": "A4_HEDGED",
+      "block_index": 25,
+      "comparison_trial": 502507,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "6593528e6ab87e78b173"
+    },
+    {
+      "anchor_trial": 502508,
+      "architecture": "A4_HEDGED",
+      "block_index": 25,
+      "comparison_trial": 502509,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "30dcdabcdbdbbbcae69c"
+    },
+    {
+      "anchor_trial": 502510,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 25,
+      "comparison_trial": 502511,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "060f6ca849f141be9dfc"
+    },
+    {
+      "anchor_trial": 502512,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 25,
+      "comparison_trial": 502513,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "34cd8b92a4e88912500d"
+    },
+    {
+      "anchor_trial": 502514,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 25,
+      "comparison_trial": 502515,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "40a436552d6e4e61bd95"
+    },
+    {
+      "anchor_trial": 502516,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 25,
+      "comparison_trial": 502517,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3d5452962995f654449c"
+    },
+    {
+      "anchor_trial": 502518,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 25,
+      "comparison_trial": 502519,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "a2d50cee0df078f9516c"
+    },
+    {
+      "anchor_trial": 502520,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 25,
+      "comparison_trial": 502521,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "36033f1f17a295c9bb78"
+    },
+    {
+      "anchor_trial": 502522,
+      "architecture": "A0_SHARED",
+      "block_index": 25,
+      "comparison_trial": 502523,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a5559b3fa1b1a6b892c7"
+    },
+    {
+      "anchor_trial": 502524,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 25,
+      "comparison_trial": 502525,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "9d4c2638d951f3d4fa4d"
+    },
+    {
+      "anchor_trial": 502526,
+      "architecture": "A0_SHARED",
+      "block_index": 25,
+      "comparison_trial": 502527,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "6893a00d0189a5b787a5"
+    },
+    {
+      "anchor_trial": 502528,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 25,
+      "comparison_trial": 502529,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "7301fa06ce455898035f"
+    },
+    {
+      "anchor_trial": 502600,
+      "architecture": "A4_HEDGED",
+      "block_index": 26,
+      "comparison_trial": 502601,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "d48b542c3d1fb6c8a692"
+    },
+    {
+      "anchor_trial": 502602,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 26,
+      "comparison_trial": 502603,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "27b4b92fc390915e23fb"
+    },
+    {
+      "anchor_trial": 502604,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 26,
+      "comparison_trial": 502605,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "00cf2eb3bf6f5071d3fa"
+    },
+    {
+      "anchor_trial": 502606,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 26,
+      "comparison_trial": 502607,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "e8ef612daf5d74dd96bd"
+    },
+    {
+      "anchor_trial": 502608,
+      "architecture": "A4_HEDGED",
+      "block_index": 26,
+      "comparison_trial": 502609,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "fbe81f27b08c1f9626e6"
+    },
+    {
+      "anchor_trial": 502610,
+      "architecture": "A0_SHARED",
+      "block_index": 26,
+      "comparison_trial": 502611,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d363b80fdf0cd4dfcc20"
+    },
+    {
+      "anchor_trial": 502612,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 26,
+      "comparison_trial": 502613,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "17237fc8e35318569189"
+    },
+    {
+      "anchor_trial": 502614,
+      "architecture": "A0_SHARED",
+      "block_index": 26,
+      "comparison_trial": 502615,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "448d42315f61fd05d730"
+    },
+    {
+      "anchor_trial": 502616,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 26,
+      "comparison_trial": 502617,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "db33649683eb3c94f534"
+    },
+    {
+      "anchor_trial": 502618,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 26,
+      "comparison_trial": 502619,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0c2b77c22777e45a8ec0"
+    },
+    {
+      "anchor_trial": 502620,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 26,
+      "comparison_trial": 502621,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4cd353b4f9b3d2908dff"
+    },
+    {
+      "anchor_trial": 502622,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 26,
+      "comparison_trial": 502623,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "13f53c068b4f95c2b7d0"
+    },
+    {
+      "anchor_trial": 502624,
+      "architecture": "A0_SHARED",
+      "block_index": 26,
+      "comparison_trial": 502625,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "808f1366a04b7dc8e56a"
+    },
+    {
+      "anchor_trial": 502626,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 26,
+      "comparison_trial": 502627,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a39ea5fa312ca5145e13"
+    },
+    {
+      "anchor_trial": 502628,
+      "architecture": "A4_HEDGED",
+      "block_index": 26,
+      "comparison_trial": 502629,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "f7d167cade112b231c53"
+    },
+    {
+      "anchor_trial": 502700,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 27,
+      "comparison_trial": 502701,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "57b8282fe54e4a630b3e"
+    },
+    {
+      "anchor_trial": 502702,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 27,
+      "comparison_trial": 502703,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "3c04e0d953531ce29071"
+    },
+    {
+      "anchor_trial": 502704,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 27,
+      "comparison_trial": 502705,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "719cfd62973e767b3f42"
+    },
+    {
+      "anchor_trial": 502706,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 27,
+      "comparison_trial": 502707,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "784e632221bdbceefe9c"
+    },
+    {
+      "anchor_trial": 502708,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 27,
+      "comparison_trial": 502709,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a545113a32bc1eb9f8e2"
+    },
+    {
+      "anchor_trial": 502710,
+      "architecture": "A4_HEDGED",
+      "block_index": 27,
+      "comparison_trial": 502711,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "062f4f9e76ba3b91f4fc"
+    },
+    {
+      "anchor_trial": 502712,
+      "architecture": "A4_HEDGED",
+      "block_index": 27,
+      "comparison_trial": 502713,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "cc26af935ce5a3aa7404"
+    },
+    {
+      "anchor_trial": 502714,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 27,
+      "comparison_trial": 502715,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "92277f7a25c7606933e3"
+    },
+    {
+      "anchor_trial": 502716,
+      "architecture": "A0_SHARED",
+      "block_index": 27,
+      "comparison_trial": 502717,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "cd1a27140d097e91a5f0"
+    },
+    {
+      "anchor_trial": 502718,
+      "architecture": "A0_SHARED",
+      "block_index": 27,
+      "comparison_trial": 502719,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "e3901dee3ac490fdf89b"
+    },
+    {
+      "anchor_trial": 502720,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 27,
+      "comparison_trial": 502721,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "a998541d7c367d8d5e4c"
+    },
+    {
+      "anchor_trial": 502722,
+      "architecture": "A4_HEDGED",
+      "block_index": 27,
+      "comparison_trial": 502723,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "14887294d71ce9beb15f"
+    },
+    {
+      "anchor_trial": 502724,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 27,
+      "comparison_trial": 502725,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a7345d645d41658c4f7b"
+    },
+    {
+      "anchor_trial": 502726,
+      "architecture": "A0_SHARED",
+      "block_index": 27,
+      "comparison_trial": 502727,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ce96b26cbe660dadb2ff"
+    },
+    {
+      "anchor_trial": 502728,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 27,
+      "comparison_trial": 502729,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "cf90e40ada88afc4063b"
+    },
+    {
+      "anchor_trial": 502800,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 28,
+      "comparison_trial": 502801,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "55e1870537efa87e9a07"
+    },
+    {
+      "anchor_trial": 502802,
+      "architecture": "A0_SHARED",
+      "block_index": 28,
+      "comparison_trial": 502803,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "5865b456b1c63865a67d"
+    },
+    {
+      "anchor_trial": 502804,
+      "architecture": "A4_HEDGED",
+      "block_index": 28,
+      "comparison_trial": 502805,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f2175d1c7aba73b69b90"
+    },
+    {
+      "anchor_trial": 502806,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 28,
+      "comparison_trial": 502807,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "cf2cc3d8f952b3e272b1"
+    },
+    {
+      "anchor_trial": 502808,
+      "architecture": "A0_SHARED",
+      "block_index": 28,
+      "comparison_trial": 502809,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "511ae49a197659e0023d"
+    },
+    {
+      "anchor_trial": 502810,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 28,
+      "comparison_trial": 502811,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "dc947b6a6adf77dbd05a"
+    },
+    {
+      "anchor_trial": 502812,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 28,
+      "comparison_trial": 502813,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "9c3e163a682e977a2c84"
+    },
+    {
+      "anchor_trial": 502814,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 28,
+      "comparison_trial": 502815,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "03f4b5a974924bcb5341"
+    },
+    {
+      "anchor_trial": 502816,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 28,
+      "comparison_trial": 502817,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "24611e551f40029bb84e"
+    },
+    {
+      "anchor_trial": 502818,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 28,
+      "comparison_trial": 502819,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "4a8ee9e604a4c83ae711"
+    },
+    {
+      "anchor_trial": 502820,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 28,
+      "comparison_trial": 502821,
+      "order_in_block": 10,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e607b90a26a7c3e2abce"
+    },
+    {
+      "anchor_trial": 502822,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 28,
+      "comparison_trial": 502823,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "aab192a936ba4c89d27e"
+    },
+    {
+      "anchor_trial": 502824,
+      "architecture": "A4_HEDGED",
+      "block_index": 28,
+      "comparison_trial": 502825,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ca590b1ec7d2535d16c7"
+    },
+    {
+      "anchor_trial": 502826,
+      "architecture": "A4_HEDGED",
+      "block_index": 28,
+      "comparison_trial": 502827,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "7e83706fffb1ccdffab7"
+    },
+    {
+      "anchor_trial": 502828,
+      "architecture": "A0_SHARED",
+      "block_index": 28,
+      "comparison_trial": 502829,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "bbd56e74df99a6e2d80a"
+    },
+    {
+      "anchor_trial": 502900,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 29,
+      "comparison_trial": 502901,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9445acf39ed8f35be4c8"
+    },
+    {
+      "anchor_trial": 502902,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 29,
+      "comparison_trial": 502903,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ee1e0e25f6cecbd423fb"
+    },
+    {
+      "anchor_trial": 502904,
+      "architecture": "A0_SHARED",
+      "block_index": 29,
+      "comparison_trial": 502905,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c8f02add1fa93a210438"
+    },
+    {
+      "anchor_trial": 502906,
+      "architecture": "A0_SHARED",
+      "block_index": 29,
+      "comparison_trial": 502907,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "31903ad094270bf80869"
+    },
+    {
+      "anchor_trial": 502908,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 29,
+      "comparison_trial": 502909,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "95bd6568b9afeeb04f8e"
+    },
+    {
+      "anchor_trial": 502910,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 29,
+      "comparison_trial": 502911,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0c84adce901d7168c3b3"
+    },
+    {
+      "anchor_trial": 502912,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 29,
+      "comparison_trial": 502913,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "5a7da3bfe3908fd3bd9e"
+    },
+    {
+      "anchor_trial": 502914,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 29,
+      "comparison_trial": 502915,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "e92ce3b04408c2b04ff5"
+    },
+    {
+      "anchor_trial": 502916,
+      "architecture": "A4_HEDGED",
+      "block_index": 29,
+      "comparison_trial": 502917,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "078885c2dad686899925"
+    },
+    {
+      "anchor_trial": 502918,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 29,
+      "comparison_trial": 502919,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "e78429fbbd85f0738ef5"
+    },
+    {
+      "anchor_trial": 502920,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 29,
+      "comparison_trial": 502921,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "60bc2b1e81b6357b4b1d"
+    },
+    {
+      "anchor_trial": 502922,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 29,
+      "comparison_trial": 502923,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "3ef3fee301c79da04f02"
+    },
+    {
+      "anchor_trial": 502924,
+      "architecture": "A0_SHARED",
+      "block_index": 29,
+      "comparison_trial": 502925,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e4419fee812bf69d2bd1"
+    },
+    {
+      "anchor_trial": 502926,
+      "architecture": "A4_HEDGED",
+      "block_index": 29,
+      "comparison_trial": 502927,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "6a8e00ed385e5a379e4b"
+    },
+    {
+      "anchor_trial": 502928,
+      "architecture": "A4_HEDGED",
+      "block_index": 29,
+      "comparison_trial": 502929,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "f0b39fe30ef79f67a4f8"
+    },
+    {
+      "anchor_trial": 503000,
+      "architecture": "A4_HEDGED",
+      "block_index": 30,
+      "comparison_trial": 503001,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a96c24f2e3d2657efe57"
+    },
+    {
+      "anchor_trial": 503002,
+      "architecture": "A4_HEDGED",
+      "block_index": 30,
+      "comparison_trial": 503003,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "48dbec24626bdeafccca"
+    },
+    {
+      "anchor_trial": 503004,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 30,
+      "comparison_trial": 503005,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "8e2fe669a8857fd11a77"
+    },
+    {
+      "anchor_trial": 503006,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 30,
+      "comparison_trial": 503007,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "ab377bac40ccba65c404"
+    },
+    {
+      "anchor_trial": 503008,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 30,
+      "comparison_trial": 503009,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "3bcfe3db27456b4eb572"
+    },
+    {
+      "anchor_trial": 503010,
+      "architecture": "A0_SHARED",
+      "block_index": 30,
+      "comparison_trial": 503011,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "32144ec6ef9f0d62333f"
+    },
+    {
+      "anchor_trial": 503012,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 30,
+      "comparison_trial": 503013,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c12cbbee2134058104d2"
+    },
+    {
+      "anchor_trial": 503014,
+      "architecture": "A0_SHARED",
+      "block_index": 30,
+      "comparison_trial": 503015,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4ed648de820a8cc76b0a"
+    },
+    {
+      "anchor_trial": 503016,
+      "architecture": "A0_SHARED",
+      "block_index": 30,
+      "comparison_trial": 503017,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "a6c6353091c467d9483a"
+    },
+    {
+      "anchor_trial": 503018,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 30,
+      "comparison_trial": 503019,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b48c0b092f37108fe4cd"
+    },
+    {
+      "anchor_trial": 503020,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 30,
+      "comparison_trial": 503021,
+      "order_in_block": 10,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "48b0b852737d525fbf2d"
+    },
+    {
+      "anchor_trial": 503022,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 30,
+      "comparison_trial": 503023,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "89c97f7ab0e89efcf92c"
+    },
+    {
+      "anchor_trial": 503024,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 30,
+      "comparison_trial": 503025,
+      "order_in_block": 12,
+      "recipe": "nominal",
+      "unit_id": "dcd0d23fb728f60a62bb"
+    },
+    {
+      "anchor_trial": 503026,
+      "architecture": "A4_HEDGED",
+      "block_index": 30,
+      "comparison_trial": 503027,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "96ebbf458efcd22fc259"
+    },
+    {
+      "anchor_trial": 503028,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 30,
+      "comparison_trial": 503029,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "5bece9de9657d6015363"
+    },
+    {
+      "anchor_trial": 503100,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 31,
+      "comparison_trial": 503101,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "f949924e231022fe18df"
+    },
+    {
+      "anchor_trial": 503102,
+      "architecture": "A0_SHARED",
+      "block_index": 31,
+      "comparison_trial": 503103,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "55a638be29b4d78ab088"
+    },
+    {
+      "anchor_trial": 503104,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 31,
+      "comparison_trial": 503105,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "ed33c3fd9bcdd2ed6827"
+    },
+    {
+      "anchor_trial": 503106,
+      "architecture": "A0_SHARED",
+      "block_index": 31,
+      "comparison_trial": 503107,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "a3a749c388f9663617da"
+    },
+    {
+      "anchor_trial": 503108,
+      "architecture": "A4_HEDGED",
+      "block_index": 31,
+      "comparison_trial": 503109,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "3d2a7455f27bcb5f1724"
+    },
+    {
+      "anchor_trial": 503110,
+      "architecture": "A0_SHARED",
+      "block_index": 31,
+      "comparison_trial": 503111,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "570eea81a24ce20d9c12"
+    },
+    {
+      "anchor_trial": 503112,
+      "architecture": "A4_HEDGED",
+      "block_index": 31,
+      "comparison_trial": 503113,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "b72c728096429e0e92b1"
+    },
+    {
+      "anchor_trial": 503114,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 31,
+      "comparison_trial": 503115,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "67420a07d74813a53eb1"
+    },
+    {
+      "anchor_trial": 503116,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 31,
+      "comparison_trial": 503117,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "4889df366c95d091dd64"
+    },
+    {
+      "anchor_trial": 503118,
+      "architecture": "A4_HEDGED",
+      "block_index": 31,
+      "comparison_trial": 503119,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4b4ecd6c85fb3d90ed6f"
+    },
+    {
+      "anchor_trial": 503120,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 31,
+      "comparison_trial": 503121,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "dacc72882867f229b80b"
+    },
+    {
+      "anchor_trial": 503122,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 31,
+      "comparison_trial": 503123,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d6e396860d8686c128ec"
+    },
+    {
+      "anchor_trial": 503124,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 31,
+      "comparison_trial": 503125,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b490942ab3f4c66abbd3"
+    },
+    {
+      "anchor_trial": 503126,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 31,
+      "comparison_trial": 503127,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "333f5f486bc95039b9d2"
+    },
+    {
+      "anchor_trial": 503128,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 31,
+      "comparison_trial": 503129,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "506ffbcd89db041113ea"
+    },
+    {
+      "anchor_trial": 503200,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 32,
+      "comparison_trial": 503201,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "2164617a161457a30dcf"
+    },
+    {
+      "anchor_trial": 503202,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 32,
+      "comparison_trial": 503203,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "e5519efc06c5fa9b32e0"
+    },
+    {
+      "anchor_trial": 503204,
+      "architecture": "A4_HEDGED",
+      "block_index": 32,
+      "comparison_trial": 503205,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "5ab61cbb4073c2aae259"
+    },
+    {
+      "anchor_trial": 503206,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 32,
+      "comparison_trial": 503207,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "257b49e34449b8d03c0e"
+    },
+    {
+      "anchor_trial": 503208,
+      "architecture": "A0_SHARED",
+      "block_index": 32,
+      "comparison_trial": 503209,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "d547d66aeaf44f7fdba6"
+    },
+    {
+      "anchor_trial": 503210,
+      "architecture": "A4_HEDGED",
+      "block_index": 32,
+      "comparison_trial": 503211,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "692a207bff076ab77b7b"
+    },
+    {
+      "anchor_trial": 503212,
+      "architecture": "A0_SHARED",
+      "block_index": 32,
+      "comparison_trial": 503213,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "937872aa8c777646e348"
+    },
+    {
+      "anchor_trial": 503214,
+      "architecture": "A4_HEDGED",
+      "block_index": 32,
+      "comparison_trial": 503215,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e36bedd92c9bd80b8727"
+    },
+    {
+      "anchor_trial": 503216,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 32,
+      "comparison_trial": 503217,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "5d91f7ae39e9f9c40417"
+    },
+    {
+      "anchor_trial": 503218,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 32,
+      "comparison_trial": 503219,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "f9cf261b156515dd67c5"
+    },
+    {
+      "anchor_trial": 503220,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 32,
+      "comparison_trial": 503221,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "c629ac3d61783de6ae48"
+    },
+    {
+      "anchor_trial": 503222,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 32,
+      "comparison_trial": 503223,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "e72e63300600bd8e8121"
+    },
+    {
+      "anchor_trial": 503224,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 32,
+      "comparison_trial": 503225,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "99fe131b589d66bdccb5"
+    },
+    {
+      "anchor_trial": 503226,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 32,
+      "comparison_trial": 503227,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "053476282736937580db"
+    },
+    {
+      "anchor_trial": 503228,
+      "architecture": "A0_SHARED",
+      "block_index": 32,
+      "comparison_trial": 503229,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "08e4f3d5b8c9614a5d57"
+    },
+    {
+      "anchor_trial": 503300,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 33,
+      "comparison_trial": 503301,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0051bb9441fdc85ae88c"
+    },
+    {
+      "anchor_trial": 503302,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 33,
+      "comparison_trial": 503303,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "284ee953160c98f8dc4b"
+    },
+    {
+      "anchor_trial": 503304,
+      "architecture": "A0_SHARED",
+      "block_index": 33,
+      "comparison_trial": 503305,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "24316f8fe881f380327a"
+    },
+    {
+      "anchor_trial": 503306,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 33,
+      "comparison_trial": 503307,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "3e757aed49c9f3be0cc2"
+    },
+    {
+      "anchor_trial": 503308,
+      "architecture": "A0_SHARED",
+      "block_index": 33,
+      "comparison_trial": 503309,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "f0aed2209dd4397c8278"
+    },
+    {
+      "anchor_trial": 503310,
+      "architecture": "A4_HEDGED",
+      "block_index": 33,
+      "comparison_trial": 503311,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "811b32a32b5ca896ce0b"
+    },
+    {
+      "anchor_trial": 503312,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 33,
+      "comparison_trial": 503313,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "52b9ea6dcf07baff5136"
+    },
+    {
+      "anchor_trial": 503314,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 33,
+      "comparison_trial": 503315,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2c15bb8a1fdffe8b5890"
+    },
+    {
+      "anchor_trial": 503316,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 33,
+      "comparison_trial": 503317,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "d95ce5a186361fe37726"
+    },
+    {
+      "anchor_trial": 503318,
+      "architecture": "A0_SHARED",
+      "block_index": 33,
+      "comparison_trial": 503319,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "2232fbcaba5c08506441"
+    },
+    {
+      "anchor_trial": 503320,
+      "architecture": "A4_HEDGED",
+      "block_index": 33,
+      "comparison_trial": 503321,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "d17d242186532b5069b0"
+    },
+    {
+      "anchor_trial": 503322,
+      "architecture": "A4_HEDGED",
+      "block_index": 33,
+      "comparison_trial": 503323,
+      "order_in_block": 11,
+      "recipe": "nominal",
+      "unit_id": "f29bd840bc0137b28f96"
+    },
+    {
+      "anchor_trial": 503324,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 33,
+      "comparison_trial": 503325,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "473703e343d88d19b577"
+    },
+    {
+      "anchor_trial": 503326,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 33,
+      "comparison_trial": 503327,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "deddab8deef77fe181da"
+    },
+    {
+      "anchor_trial": 503328,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 33,
+      "comparison_trial": 503329,
+      "order_in_block": 14,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "5dec3988af5c8b59b992"
+    },
+    {
+      "anchor_trial": 503400,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 34,
+      "comparison_trial": 503401,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "4f3e6c44974811c27f00"
+    },
+    {
+      "anchor_trial": 503402,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 34,
+      "comparison_trial": 503403,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b66926f15d6b964345e1"
+    },
+    {
+      "anchor_trial": 503404,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 34,
+      "comparison_trial": 503405,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "63d71450c8816769b32c"
+    },
+    {
+      "anchor_trial": 503406,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 34,
+      "comparison_trial": 503407,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "e34f54f7e49023c9a3c9"
+    },
+    {
+      "anchor_trial": 503408,
+      "architecture": "A4_HEDGED",
+      "block_index": 34,
+      "comparison_trial": 503409,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "140ca4a23fea72203e59"
+    },
+    {
+      "anchor_trial": 503410,
+      "architecture": "A4_HEDGED",
+      "block_index": 34,
+      "comparison_trial": 503411,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "00b628c3cbcd07914b73"
+    },
+    {
+      "anchor_trial": 503412,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 34,
+      "comparison_trial": 503413,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "31e2916825a3b866aeb0"
+    },
+    {
+      "anchor_trial": 503414,
+      "architecture": "A4_HEDGED",
+      "block_index": 34,
+      "comparison_trial": 503415,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "7a18fcd7b4c66db60902"
+    },
+    {
+      "anchor_trial": 503416,
+      "architecture": "A0_SHARED",
+      "block_index": 34,
+      "comparison_trial": 503417,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "6b2024f9b57a28ac7c61"
+    },
+    {
+      "anchor_trial": 503418,
+      "architecture": "A0_SHARED",
+      "block_index": 34,
+      "comparison_trial": 503419,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "d98c624a95e52a8affc2"
+    },
+    {
+      "anchor_trial": 503420,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 34,
+      "comparison_trial": 503421,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "0a0ecd8b836a56a130f4"
+    },
+    {
+      "anchor_trial": 503422,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 34,
+      "comparison_trial": 503423,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "19cf37b9af6749ab2638"
+    },
+    {
+      "anchor_trial": 503424,
+      "architecture": "A0_SHARED",
+      "block_index": 34,
+      "comparison_trial": 503425,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "d00f7bcd3a710bb6a17b"
+    },
+    {
+      "anchor_trial": 503426,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 34,
+      "comparison_trial": 503427,
+      "order_in_block": 13,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "dff90269e925f95ed747"
+    },
+    {
+      "anchor_trial": 503428,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 34,
+      "comparison_trial": 503429,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "d5f1620c6adf2671c3aa"
+    },
+    {
+      "anchor_trial": 503500,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 35,
+      "comparison_trial": 503501,
+      "order_in_block": 0,
+      "recipe": "nominal",
+      "unit_id": "f345a78809fd725ca2b4"
+    },
+    {
+      "anchor_trial": 503502,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 35,
+      "comparison_trial": 503503,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "5aa016d080cd3b0d40ed"
+    },
+    {
+      "anchor_trial": 503504,
+      "architecture": "A4_HEDGED",
+      "block_index": 35,
+      "comparison_trial": 503505,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "584764895b10062a7521"
+    },
+    {
+      "anchor_trial": 503506,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 35,
+      "comparison_trial": 503507,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "9bee5f79969933dcfa61"
+    },
+    {
+      "anchor_trial": 503508,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 35,
+      "comparison_trial": 503509,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a8f2bfeb9676121296df"
+    },
+    {
+      "anchor_trial": 503510,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 35,
+      "comparison_trial": 503511,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "423cb7e3d92cdf100e2e"
+    },
+    {
+      "anchor_trial": 503512,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 35,
+      "comparison_trial": 503513,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "42107fbbf9ac93b943ce"
+    },
+    {
+      "anchor_trial": 503514,
+      "architecture": "A0_SHARED",
+      "block_index": 35,
+      "comparison_trial": 503515,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "898f2dddbf833251b473"
+    },
+    {
+      "anchor_trial": 503516,
+      "architecture": "A0_SHARED",
+      "block_index": 35,
+      "comparison_trial": 503517,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9635eff0accfd57507eb"
+    },
+    {
+      "anchor_trial": 503518,
+      "architecture": "A0_SHARED",
+      "block_index": 35,
+      "comparison_trial": 503519,
+      "order_in_block": 9,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "76e0723c2e1f4a66f496"
+    },
+    {
+      "anchor_trial": 503520,
+      "architecture": "A4_HEDGED",
+      "block_index": 35,
+      "comparison_trial": 503521,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "c8dd9bdefde535c62502"
+    },
+    {
+      "anchor_trial": 503522,
+      "architecture": "A4_HEDGED",
+      "block_index": 35,
+      "comparison_trial": 503523,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "b414800def69af83af12"
+    },
+    {
+      "anchor_trial": 503524,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 35,
+      "comparison_trial": 503525,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0d50b4e9215a853fcff5"
+    },
+    {
+      "anchor_trial": 503526,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 35,
+      "comparison_trial": 503527,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "653aae5717bf2aeee9e8"
+    },
+    {
+      "anchor_trial": 503528,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 35,
+      "comparison_trial": 503529,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "93092242ee7dd3c16886"
+    },
+    {
+      "anchor_trial": 503600,
+      "architecture": "A0_SHARED",
+      "block_index": 36,
+      "comparison_trial": 503601,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "fe6d2b96ca56ffd7f911"
+    },
+    {
+      "anchor_trial": 503602,
+      "architecture": "A4_HEDGED",
+      "block_index": 36,
+      "comparison_trial": 503603,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "2e176e7f6d6c900feed0"
+    },
+    {
+      "anchor_trial": 503604,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 36,
+      "comparison_trial": 503605,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "1218c141adedea2b2761"
+    },
+    {
+      "anchor_trial": 503606,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 36,
+      "comparison_trial": 503607,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "ce047df7e9313892a218"
+    },
+    {
+      "anchor_trial": 503608,
+      "architecture": "A4_HEDGED",
+      "block_index": 36,
+      "comparison_trial": 503609,
+      "order_in_block": 4,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "67e3d676422f1494f320"
+    },
+    {
+      "anchor_trial": 503610,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 36,
+      "comparison_trial": 503611,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "9d9f257dbb66b3432ed9"
+    },
+    {
+      "anchor_trial": 503612,
+      "architecture": "A4_HEDGED",
+      "block_index": 36,
+      "comparison_trial": 503613,
+      "order_in_block": 6,
+      "recipe": "nominal",
+      "unit_id": "ab4bcf230ebab6120d50"
+    },
+    {
+      "anchor_trial": 503614,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 36,
+      "comparison_trial": 503615,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2f9f28ff228e44284545"
+    },
+    {
+      "anchor_trial": 503616,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 36,
+      "comparison_trial": 503617,
+      "order_in_block": 8,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "22f7482e478af35f9e77"
+    },
+    {
+      "anchor_trial": 503618,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 36,
+      "comparison_trial": 503619,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "e71938c7cd4f1a30e0ae"
+    },
+    {
+      "anchor_trial": 503620,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 36,
+      "comparison_trial": 503621,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "d5f696fd7fa3db969194"
+    },
+    {
+      "anchor_trial": 503622,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 36,
+      "comparison_trial": 503623,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "be54072021043269c585"
+    },
+    {
+      "anchor_trial": 503624,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 36,
+      "comparison_trial": 503625,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "fdbe6db51f0fca0838ca"
+    },
+    {
+      "anchor_trial": 503626,
+      "architecture": "A0_SHARED",
+      "block_index": 36,
+      "comparison_trial": 503627,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "efff60b5251ab1c8c2a0"
+    },
+    {
+      "anchor_trial": 503628,
+      "architecture": "A0_SHARED",
+      "block_index": 36,
+      "comparison_trial": 503629,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "cb8da1376c5e4bef7cc9"
+    },
+    {
+      "anchor_trial": 503700,
+      "architecture": "A0_SHARED",
+      "block_index": 37,
+      "comparison_trial": 503701,
+      "order_in_block": 0,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a9c2c5b5b23708277f5c"
+    },
+    {
+      "anchor_trial": 503702,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 37,
+      "comparison_trial": 503703,
+      "order_in_block": 1,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "0aefaf1b11e4fb054989"
+    },
+    {
+      "anchor_trial": 503704,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 37,
+      "comparison_trial": 503705,
+      "order_in_block": 2,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "8d45b36c0203d01bdfc8"
+    },
+    {
+      "anchor_trial": 503706,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 37,
+      "comparison_trial": 503707,
+      "order_in_block": 3,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "685033aab3a772273a4a"
+    },
+    {
+      "anchor_trial": 503708,
+      "architecture": "A0_SHARED",
+      "block_index": 37,
+      "comparison_trial": 503709,
+      "order_in_block": 4,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "14a722cf863c5999a553"
+    },
+    {
+      "anchor_trial": 503710,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 37,
+      "comparison_trial": 503711,
+      "order_in_block": 5,
+      "recipe": "nominal",
+      "unit_id": "389a6447f49c40f56ef5"
+    },
+    {
+      "anchor_trial": 503712,
+      "architecture": "A4_HEDGED",
+      "block_index": 37,
+      "comparison_trial": 503713,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c47c52714f9343879e33"
+    },
+    {
+      "anchor_trial": 503714,
+      "architecture": "A0_SHARED",
+      "block_index": 37,
+      "comparison_trial": 503715,
+      "order_in_block": 7,
+      "recipe": "nominal",
+      "unit_id": "c06b7113968869e81061"
+    },
+    {
+      "anchor_trial": 503716,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 37,
+      "comparison_trial": 503717,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "a6634441589d02277f0c"
+    },
+    {
+      "anchor_trial": 503718,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 37,
+      "comparison_trial": 503719,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "a64d8599d580c0e60eba"
+    },
+    {
+      "anchor_trial": 503720,
+      "architecture": "A4_HEDGED",
+      "block_index": 37,
+      "comparison_trial": 503721,
+      "order_in_block": 10,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b9a4b0fe8c113b97c1f4"
+    },
+    {
+      "anchor_trial": 503722,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 37,
+      "comparison_trial": 503723,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "94589e85eca3ba935dea"
+    },
+    {
+      "anchor_trial": 503724,
+      "architecture": "A4_HEDGED",
+      "block_index": 37,
+      "comparison_trial": 503725,
+      "order_in_block": 12,
+      "recipe": "nominal",
+      "unit_id": "7231d0abb7cde3bbffbd"
+    },
+    {
+      "anchor_trial": 503726,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 37,
+      "comparison_trial": 503727,
+      "order_in_block": 13,
+      "recipe": "nominal",
+      "unit_id": "d617205242d848a27bfc"
+    },
+    {
+      "anchor_trial": 503728,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 37,
+      "comparison_trial": 503729,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "57d3978f56e63ae0e0d5"
+    },
+    {
+      "anchor_trial": 503800,
+      "architecture": "A4_HEDGED",
+      "block_index": 38,
+      "comparison_trial": 503801,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "354da7818f5ab491921e"
+    },
+    {
+      "anchor_trial": 503802,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 38,
+      "comparison_trial": 503803,
+      "order_in_block": 1,
+      "recipe": "nominal",
+      "unit_id": "072b8a0eb8d453435585"
+    },
+    {
+      "anchor_trial": 503804,
+      "architecture": "A0_SHARED",
+      "block_index": 38,
+      "comparison_trial": 503805,
+      "order_in_block": 2,
+      "recipe": "nominal",
+      "unit_id": "aed4f6ad12e274324fa7"
+    },
+    {
+      "anchor_trial": 503806,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 38,
+      "comparison_trial": 503807,
+      "order_in_block": 3,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "c5a4b8ec1bd4bb69d1ba"
+    },
+    {
+      "anchor_trial": 503808,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 38,
+      "comparison_trial": 503809,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "483590a04893f08625f4"
+    },
+    {
+      "anchor_trial": 503810,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 38,
+      "comparison_trial": 503811,
+      "order_in_block": 5,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "55039b63927d35307ea3"
+    },
+    {
+      "anchor_trial": 503812,
+      "architecture": "A0_SHARED",
+      "block_index": 38,
+      "comparison_trial": 503813,
+      "order_in_block": 6,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "409865c8aabdcce88edc"
+    },
+    {
+      "anchor_trial": 503814,
+      "architecture": "A0_SHARED",
+      "block_index": 38,
+      "comparison_trial": 503815,
+      "order_in_block": 7,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "05a51e0ee8bcc61885e2"
+    },
+    {
+      "anchor_trial": 503816,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 38,
+      "comparison_trial": 503817,
+      "order_in_block": 8,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "8c61ac2985409e1327f9"
+    },
+    {
+      "anchor_trial": 503818,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 38,
+      "comparison_trial": 503819,
+      "order_in_block": 9,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "8d90d373ce357d5a49a6"
+    },
+    {
+      "anchor_trial": 503820,
+      "architecture": "A4_HEDGED",
+      "block_index": 38,
+      "comparison_trial": 503821,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "2dffee15f426a3bb32a5"
+    },
+    {
+      "anchor_trial": 503822,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 38,
+      "comparison_trial": 503823,
+      "order_in_block": 11,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "0c4056588c79cf6a11ab"
+    },
+    {
+      "anchor_trial": 503824,
+      "architecture": "A4_HEDGED",
+      "block_index": 38,
+      "comparison_trial": 503825,
+      "order_in_block": 12,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "8ad98dc89ca8ee74251e"
+    },
+    {
+      "anchor_trial": 503826,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 38,
+      "comparison_trial": 503827,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "7ebe678dac17b709258c"
+    },
+    {
+      "anchor_trial": 503828,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 38,
+      "comparison_trial": 503829,
+      "order_in_block": 14,
+      "recipe": "nominal",
+      "unit_id": "40b4c964fecca91b68eb"
+    },
+    {
+      "anchor_trial": 503900,
+      "architecture": "A4_HEDGED",
+      "block_index": 39,
+      "comparison_trial": 503901,
+      "order_in_block": 0,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "894a22b2a86f04898e5e"
+    },
+    {
+      "anchor_trial": 503902,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 39,
+      "comparison_trial": 503903,
+      "order_in_block": 1,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b9bd119648c6f212e087"
+    },
+    {
+      "anchor_trial": 503904,
+      "architecture": "A0_SHARED",
+      "block_index": 39,
+      "comparison_trial": 503905,
+      "order_in_block": 2,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "b283c375d84221ebd0f1"
+    },
+    {
+      "anchor_trial": 503906,
+      "architecture": "A0_SHARED",
+      "block_index": 39,
+      "comparison_trial": 503907,
+      "order_in_block": 3,
+      "recipe": "nominal",
+      "unit_id": "26e013dde564060e55d3"
+    },
+    {
+      "anchor_trial": 503908,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 39,
+      "comparison_trial": 503909,
+      "order_in_block": 4,
+      "recipe": "nominal",
+      "unit_id": "0a63613d26b48c54d5dc"
+    },
+    {
+      "anchor_trial": 503910,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 39,
+      "comparison_trial": 503911,
+      "order_in_block": 5,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "fb49d5c1cf34ea7093c4"
+    },
+    {
+      "anchor_trial": 503912,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 39,
+      "comparison_trial": 503913,
+      "order_in_block": 6,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "9bb2e214752bb5b4b951"
+    },
+    {
+      "anchor_trial": 503914,
+      "architecture": "A0_SHARED",
+      "block_index": 39,
+      "comparison_trial": 503915,
+      "order_in_block": 7,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "8d04f45d99d111d8afc6"
+    },
+    {
+      "anchor_trial": 503916,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 39,
+      "comparison_trial": 503917,
+      "order_in_block": 8,
+      "recipe": "nominal",
+      "unit_id": "6f6764d4c854e1ba05ab"
+    },
+    {
+      "anchor_trial": 503918,
+      "architecture": "A4_HEDGED",
+      "block_index": 39,
+      "comparison_trial": 503919,
+      "order_in_block": 9,
+      "recipe": "nominal",
+      "unit_id": "638794c59a025491cefd"
+    },
+    {
+      "anchor_trial": 503920,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 39,
+      "comparison_trial": 503921,
+      "order_in_block": 10,
+      "recipe": "nominal",
+      "unit_id": "fcfb1b0ba1adb818e198"
+    },
+    {
+      "anchor_trial": 503922,
+      "architecture": "A3_ROLE_ROUTED",
+      "block_index": 39,
+      "comparison_trial": 503923,
+      "order_in_block": 11,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "334408e85a70c10d7add"
+    },
+    {
+      "anchor_trial": 503924,
+      "architecture": "A1_LABEL_ONLY",
+      "block_index": 39,
+      "comparison_trial": 503925,
+      "order_in_block": 12,
+      "recipe": "origin_rng_and_context_reuse",
+      "unit_id": "5dead0a22aa5e24bd79b"
+    },
+    {
+      "anchor_trial": 503926,
+      "architecture": "A4_HEDGED",
+      "block_index": 39,
+      "comparison_trial": 503927,
+      "order_in_block": 13,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "2cc731d022d810487977"
+    },
+    {
+      "anchor_trial": 503928,
+      "architecture": "A2_GLOBAL_SPLIT_SHAM",
+      "block_index": 39,
+      "comparison_trial": 503929,
+      "order_in_block": 14,
+      "recipe": "origin_rng_state_reuse",
+      "unit_id": "1ad25852ff4e32429687"
+    }
+  ]
+}
