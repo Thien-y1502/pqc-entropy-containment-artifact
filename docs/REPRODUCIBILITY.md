@@ -24,6 +24,10 @@ primary and replay semantic objects. Cost analysis verifies the schedule-record
 identity set and the completeness of every randomized block before computing an
 estimate.
 
+The reproduction root also contains `CHECKSUMS.sha256` with paths relative to
+that root, so a downloaded workflow artifact can be checked in place with
+`sha256sum -c CHECKSUMS.sha256`.
+
 ## What is public
 
 The release contains the minimal workers, orchestration, contracts, raw

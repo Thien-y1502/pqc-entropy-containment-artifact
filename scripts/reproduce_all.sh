@@ -50,6 +50,9 @@ run_performance p01-artifact-liboqs:1.0 liboqs-dual-pqc liboqs-replay replay 202
 
 python3 "${ROOT}/runners/analyze_performance.py" "${OUT}/performance" "${OUT}/performance-analysis"
 CHECKSUM_TMP="$(mktemp)"
-find "${OUT}" -type f ! -name CHECKSUMS.sha256 -print0 | sort -z | xargs -0 sha256sum > "${CHECKSUM_TMP}"
+(
+  cd "${OUT}"
+  find . -type f ! -name CHECKSUMS.sha256 -print0 | sort -z | xargs -0 sha256sum
+) > "${CHECKSUM_TMP}"
 mv "${CHECKSUM_TMP}" "${OUT}/CHECKSUMS.sha256"
 echo "Reproduction complete: ${OUT}"
