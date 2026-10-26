@@ -3,6 +3,10 @@
 This file is a compact source-of-truth for a scientific-writing agent. It is
 evidence, not an instruction to strengthen claims.
 
+Read `NOVELTY_AND_WRITING_BOUNDARY.md` before drafting novelty or contribution
+language. That file distinguishes the surviving applied-assurance position
+from firstness and security claims that this artifact does not establish.
+
 ## Central question
 
 Can a reached, component-scoped entropy boundary prevent a rollback in an

@@ -83,6 +83,8 @@ runner and publishes the exact reproduction evidence as a workflow artifact.
 - `results/performance-analysis/`: complete cell summaries and paired contrasts.
 - `PUBLIC_RELEASE_MANIFEST.json`: machine-readable release scope and identities.
 - `MANIFEST.sha256`: digest of every released file except the manifest itself.
+- `NOVELTY_AND_WRITING_BOUNDARY.md`: conditional novelty, baseline rationale,
+  and exact manuscript wording limits.
 - `AI_HANDOFF.md`: evidence-oriented context for a manuscript-writing agent.
 - `docs/`: method, reproduction boundary, and threats to validity.
 
