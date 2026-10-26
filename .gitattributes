@@ -1,1 +1,4 @@
 * text=auto eol=lf
+# Python's RFC-4180 CSV writer emits CRLF. Preserve those bytes because the
+# committed analysis envelope hashes the exact generated CSV artifacts.
+results/performance-analysis/*.csv binary
