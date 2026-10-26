@@ -3,6 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 OUT="${1:-${ROOT}/reproduced-results}"
+DOCKER_USER="$(id -u):$(id -g)"
 if [[ -e "${OUT}" ]]; then
   echo "Refusing to overwrite existing output: ${OUT}" >&2
   exit 2
@@ -15,7 +16,8 @@ docker build -f "${ROOT}/docker/Dockerfile.liboqs" -t p01-artifact-liboqs:1.0 "$
 
 run_confirmation() {
   local image="$1" name="$2" phase="$3" seed="$4"
-  docker run --rm --mount "type=bind,source=${OUT}/confirmation,target=/data" "${image}" \
+  docker run --rm --user "${DOCKER_USER}" \
+    --mount "type=bind,source=${OUT}/confirmation,target=/data" "${image}" \
     --output-dir "/data/${name}" --phase "${phase}" --pairs 8 --anchor-base 1000 --schedule-seed "${seed}"
 }
 run_confirmation p01-artifact-go:1.0 go124-primary primary 2026102511
@@ -32,7 +34,7 @@ python3 "${ROOT}/runners/compare_replay.py" "${OUT}/confirmation/liboqs-primary/
 
 run_performance() {
   local image="$1" implementation="$2" name="$3" phase="$4" seed="$5" base="$6"
-  docker run --rm --entrypoint python \
+  docker run --rm --user "${DOCKER_USER}" --entrypoint python \
     --mount "type=bind,source=${OUT}/performance,target=/data" "${image}" \
     /opt/p01/benchmark_runner.py --binary /opt/p01/pair-worker \
     --implementation "${implementation}" --contract /opt/p01/performance_contract.frozen.json \

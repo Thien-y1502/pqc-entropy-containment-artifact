@@ -41,3 +41,8 @@ The committed evidence represents an end-to-end executed study with complete
 source, contracts, logs, and results. A successful public GitHub Actions run is
 a clean-environment reproduction of the released implementation, but not an
 independent reimplementation by another research team.
+
+On POSIX hosts the reproduction script maps each container process to the
+invoking user's UID/GID so evidence written to the bind mount remains owned by
+that user. This changes filesystem ownership only, not the worker inputs or
+measurement contract.
